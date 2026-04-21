@@ -1,0 +1,90 @@
+---
+title: "Taller Aplicado: Análisis de Política Económica - Caso Andesur"
+assignment: "Taller Aplicado: Unidad 1"
+submission_date: "20 de abril de 2026"
+format:
+  pdf:
+    documentclass: article
+    papersize: A4
+    margin-left: 2.5cm
+    margin-right: 2.5cm
+---
+
+# Introducción al Caso Andesur
+El país enfrenta un escenario de crecimiento débil, malestar social y presiones sectoriales divergentes. A continuación, se presenta el análisis técnico bajo el marco de Cuadrado Roura (2014).
+
+# Parte I: Conceptos Fundamentales
+
+## 1. Economía vs. Política Económica
+**a) Economía:** Es el diagnóstico del caso (ej. el crecimiento ha sido bajo en los últimos 3 años, el desempleo juvenil aumentó). Se limita a describir y explicar los fenómenos.
+**b) Política Económica:** Es el conjunto de medidas anunciadas por el gobierno (ej. congelamiento de precios, aumento de salario mínimo). Es la intervención deliberada.
+**Necesidad de la Política:** El caso no puede entenderse solo desde la economía porque existe una **intervención de poder**. Las demandas sociales y las presiones políticas exigen que el Estado modifique las variables para alcanzar fines sociales que el mercado por sí solo no está proveyendo.
+
+## 2. Praxis vs. Disciplina
+- **Praxis (Práctica):** El anuncio del plan económico por parte del gobierno y la ejecución de las transferencias monetarias.
+- **Disciplina (Teoría):** El análisis de los economistas sobre la incoherencia del plan y la evaluación de la viabilidad fiscal por parte del Ministerio de Finanzas.
+**Riesgo de Confusión:** Confundir praxis con disciplina lleva a decisiones voluntaristas (creer que solo con desear un fin se tienen los instrumentos técnicos) o a análisis académicos alejados de la factibilidad política.
+
+# Parte II: Análisis Positivo y Normativo
+
+## 3. Clasificación de Enunciados
+a) **Positivo:** "El desempleo juvenil aumentó..." (Hecho verificable).
+b) **Normativo:** "El gobierno debería priorizar..." (Juicio de valor/prioridad).
+c) **Positivo:** "El crédito subsidiado puede aumentar..." (Relación causa-efecto).
+d) **Normativo:** "Es injusto que las familias..." (Carga moral/ética).
+e) **Positivo:** "La reducción de ciertos impuestos podría estimular..." (Hipótesis técnica).
+f) **Normativo:** "La prioridad debe ser el bienestar..." (Criterio de valor político).
+
+## 4. Relación en la Práctica
+Aunque se distinguen conceptualmente, se relacionan porque el análisis **positivo** (el diagnóstico del bajo crecimiento) es el insumo necesario para que el decisor aplique su criterio **normativo** (la decisión de qué objetivo priorizar).
+
+# Parte III: Jerarquía de la Política Económica
+
+## 5. Tabla de Fines, Objetivos e Instrumentos
+
+| Fines (Metas Genéricas) | Objetivos (Metas Cuantificables) | Instrumentos (Medios) |
+|:---|:---|:---|
+| Bienestar de las familias | Reducción del desempleo juvenil | Crédito subsidiado |
+| Mayor equidad social | Estabilidad de precios | Reducción temporal de impuestos |
+| | | Inversión pública en obras |
+| | | Transferencias monetarias |
+| | | Revisión de aranceles |
+| | | Aumento del salario mínimo |
+| | | Formalización de pequeños negocios |
+
+**Nota sobre confusión:** No debe confundirse un instrumento con un fin porque el instrumento es el "cómo" y el fin es el "para qué" último. Usar un instrumento (ej. aranceles) como si fuera un fin puede llevar a políticas proteccionistas ineficientes.
+
+# Parte IV: Coherencia y Clasificación
+
+## 6. Análisis de Coherencia de Instrumentos
+1. **Aumento Salario Mínimo:** Persigue el bienestar; podría aumentar el consumo; pero genera tensión al aumentar costos para microempresas (PYMES), pudiendo causar más desempleo.
+2. **Congelamiento de Precios:** Persigue estabilidad; alivia el gasto del hogar; pero genera costos de escasez y desincentiva la oferta.
+3. **Inversión Pública en Obras:** Persigue empleo; dinamiza la economía local; pero choca con la limitación del espacio fiscal.
+
+## 7. Taxonomía de Clasificación
+
+| Medida | Orientación | Carácter Inst. | Nivel Actuación | Temporal |
+|:---|:---|:---|:---|:---|
+| IVA/Impuestos | Proceso | Cuantitativa | Micro/Macro | Corto Plazo |
+| Salario Mínimo | Ordenación | Cualitativa/Inst. | Macro/Social | Mediano Plazo |
+| Transferencias | Proceso | Cuantitativa | Social/Micro | Corto Plazo |
+
+## 8. Multi-categoría
+Una medida como la **Inversión Pública** puede ser **Cuantitativa** (monto invertido) y de **Proceso** (atender desempleo actual), pero también **Cualitativa** si implica un cambio en la ley de contrataciones. No es error, sino reflejo de la complejidad económica.
+
+# Parte V: Tensiones y Recomendaciones
+
+## 9. Tensiones Técnicas
+1. **Salario Mínimo vs. Formalización:** El aumento del salario podría expulsar a pequeños negocios hacia la informalidad al no poder costearlo.
+2. **Inversión Pública vs. Espacio Fiscal:** Existe una contradicción directa entre la demanda de obra pública y la advertencia de Finanzas sobre la falta de recursos.
+
+## 10. Recomendaciones de Implementación
+**Inmediatas (4):**
+1. **Formalización de negocios:** Bajo costo fiscal y mejora la base tributaria.
+2. **Transferencias a vulnerables:** Efecto alivio inmediato con focalización precisa.
+3. **Inversión pública (obras mano de obra):** Ataque directo al desempleo.
+4. **Mesa técnica de productividad:** Para alinear finanzas y realidad sectorial.
+
+**Postergadas (2):**
+1. **Congelamiento de precios:** Genera distorsiones de mercado difíciles de revertir.
+2. **Crédito subsidiado masivo:** Riesgo de impago y mayor presión al déficit si no está bien fondeado.

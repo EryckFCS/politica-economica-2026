@@ -1,0 +1,47 @@
+---
+title: "Aplicación del Marco Conceptual"
+assignment: "Aprendizaje Autónomo"
+submission_date: "20 de abril de 2026"
+format:
+  pdf:
+    documentclass: article
+    base_format: university-task
+    papersize: A4
+    margin-left: 2.5cm
+    margin-right: 2.5cm
+    header-includes: |
+      \usepackage{titlesec}
+      \usepackage{enumitem}
+---
+
+# Introducción
+
+La distinción entre una política económica técnicamente fundamentada y un conjunto disperso de decisiones reactivas no es meramente semántica; radica en la aplicación rigurosa de la **teoría de la política económica** como disciplina frente a la simple **praxis** política. Mientras que las decisiones reactivas suelen ser respuestas *ad-hoc* a presiones externas, una política fundamentada se estructura sobre una jerarquía lógica de fines, objetivos e instrumentos, tal como lo define Cuadrado Roura (2014).
+
+# Desarrollo
+
+## Diferencia entre Economía y Política Económica
+La **Economía** (como ciencia positiva) se encarga de explicar los fenómenos tal cual son, buscando relaciones de causalidad. En contraste, la **Política Económica** es la aplicación de dicha ciencia para modificar la realidad. Según Tinbergen (1952), esto implica la "variación deliberada de medios para alcanzar objetivos". 
+
+En el caso del **Acuerdo SAF 2024 con el FMI**, observamos una política fundamentada porque no se limita a "reaccionar" a la falta de liquidez, sino que establece un marco de ordenación (dimensión positiva) basado en diagnósticos de sostenibilidad fiscal, traduciéndolos en medidas normativas (lo que "debe ser") para garantizar la estabilidad monetaria.
+
+## Dimensión Positiva y Normativa
+Una política reactiva se queda en lo normativo del momento ("necesitamos dinero ahora"). Una política técnica equilibra:
+1.  **Dimensión Positiva**: El diagnóstico del déficit y la brecha de financiamiento.
+2.  **Dimensión Normativa**: La decisión de priorizar la estabilidad de la dolarización frente a objetivos de gasto inmediato.
+
+## Jerarquía de Fines, Objetivos e Instrumentos
+La política técnica se diferencia por su estructura:
+-   **Fines**: Sostenibilidad institucional y blindaje de la dolarización.
+-   **Objetivos**: Consolidación fiscal (reducción del déficit primario) y acumulación de reservas.
+-   **Instrumentos**: Incremento del IVA al 15%, focalización de subsidios y establecimiento de pisos de gasto social.
+
+Esta jerarquía permite clasificar las políticas adecuadamente. Por ejemplo, el Acuerdo SAF es una política de **proceso** (estabilidad coyuntural) y de **ordenación** (reformas estructurales), lo que le otorga coherencia interna, a diferencia de las medidas del caso "Andesur", que mezclan instrumentos (crédito) con aspiraciones sin una ruta clara.
+
+# Conclusión
+
+Lo que distingue a una política fundamentada es su capacidad de **jerarquización y justificación teórica**. El Acuerdo SAF 2024, a pesar de sus costos sociales, responde a un diseño técnico que busca la estabilidad de largo plazo mediante la manipulación de instrumentos cuantitativos y cualitativos precisos. Una decisión reactiva, en cambio, carece de esta trazabilidad y suele generar conflictos no previstos entre objetivos al no considerar las restricciones presupuestarias y de mercado.
+
+---
+
+\fuente{Cuadrado Roura (2014), FMI (2024) y análisis institucional del Nodo PE.}

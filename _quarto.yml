@@ -1,0 +1,20 @@
+project:
+  type: default
+
+format:
+  pdf:
+    pdf-engine: lualatex
+    template: /home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/templates/academic_task.tex
+    citeproc: false
+    keep-tex: true
+    # IMPORTANTE: No activar 'lang: es' aquí para evitar colisiones de babel.
+    # La localización se maneja de forma determinista en la plantilla FED.
+
+metadata:
+  university: "UNIVERSIDAD NACIONAL DE LOJA"
+  faculty: "FACULTAD JURÍDICA, SOCIAL Y ADMINISTRATIVA"
+  school: "CARRERA DE ECONOMÍA"
+  course: "POLÍTICA ECONÓMICA"
+  author: "Erick Fabricio Condoy Seraquive"
+  professor: "Econ. Maria Gabriela Moreno Hurtado"
+  # Estos valores se heredan automáticamente en todas las tareas del nodo.

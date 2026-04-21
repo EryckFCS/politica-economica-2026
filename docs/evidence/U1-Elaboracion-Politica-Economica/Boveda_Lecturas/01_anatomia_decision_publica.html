@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Erick Fabricio Condoy Seraquive">
+
+<title>Análisis: Anatomía de la Decisión Pública</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="01_anatomia_decision_publica_files/libs/clipboard/clipboard.min.js"></script>
+<script src="01_anatomia_decision_publica_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="01_anatomia_decision_publica_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="01_anatomia_decision_publica_files/libs/quarto-html/popper.min.js"></script>
+<script src="01_anatomia_decision_publica_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="01_anatomia_decision_publica_files/libs/quarto-html/anchor.min.js"></script>
+<link href="01_anatomia_decision_publica_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="01_anatomia_decision_publica_files/libs/quarto-html/quarto-syntax-highlighting-b6a8276bf55561bdbc268162d41bd1f7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="01_anatomia_decision_publica_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="01_anatomia_decision_publica_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="01_anatomia_decision_publica_files/libs/bootstrap/bootstrap-114036edf1626c642e1a8ef4be56aac6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="01_anatomia_decision_publica_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="01_anatomia_decision_publica_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="01_anatomia_decision_publica_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#los-tres-ámbitos-del-ecosistema-político-económico" id="toc-los-tres-ámbitos-del-ecosistema-político-económico" class="nav-link" data-scroll-target="#los-tres-ámbitos-del-ecosistema-político-económico">Los Tres Ámbitos del Ecosistema Político-Económico</a>
+  <ul class="collapse">
+  <li><a href="#ámbito-de-generación-de-opciones" id="toc-ámbito-de-generación-de-opciones" class="nav-link" data-scroll-target="#ámbito-de-generación-de-opciones">1. Ámbito de Generación de Opciones</a></li>
+  <li><a href="#ámbito-de-proyección-de-influencias" id="toc-ámbito-de-proyección-de-influencias" class="nav-link" data-scroll-target="#ámbito-de-proyección-de-influencias">2. Ámbito de Proyección de Influencias</a></li>
+  <li><a href="#ámbito-de-decisión" id="toc-ámbito-de-decisión" class="nav-link" data-scroll-target="#ámbito-de-decisión">3. Ámbito de Decisión</a></li>
+  </ul></li>
+  <li><a href="#representación-visual-del-ecosistema" id="toc-representación-visual-del-ecosistema" class="nav-link" data-scroll-target="#representación-visual-del-ecosistema">Representación Visual del Ecosistema</a></li>
+  <li><a href="#expansión-teórica-por-qué-fallan-las-políticas-en-ecuador" id="toc-expansión-teórica-por-qué-fallan-las-políticas-en-ecuador" class="nav-link" data-scroll-target="#expansión-teórica-por-qué-fallan-las-políticas-en-ecuador">Expansión Teórica: Por qué fallan las políticas en Ecuador</a>
+  <ul class="collapse">
+  <li><a href="#el-ciclo-político-económico-y-la-ignorancia-racional" id="toc-el-ciclo-político-económico-y-la-ignorancia-racional" class="nav-link" data-scroll-target="#el-ciclo-político-económico-y-la-ignorancia-racional">1. El Ciclo Político Económico y la Ignorancia Racional</a></li>
+  <li><a href="#la-burocracia-y-la-búsqueda-de-rentas-rent-seeking" id="toc-la-burocracia-y-la-búsqueda-de-rentas-rent-seeking" class="nav-link" data-scroll-target="#la-burocracia-y-la-búsqueda-de-rentas-rent-seeking">2. La Burocracia y la Búsqueda de Rentas (Rent-seeking)</a></li>
+  <li><a href="#fallos-del-mercado-vs.-fallos-del-estado-en-ecuador" id="toc-fallos-del-mercado-vs.-fallos-del-estado-en-ecuador" class="nav-link" data-scroll-target="#fallos-del-mercado-vs.-fallos-del-estado-en-ecuador">3. Fallos del Mercado vs.&nbsp;Fallos del Estado en Ecuador</a></li>
+  </ul></li>
+  <li><a href="#el-sistema-de-asesoramiento-económico-técnica-o-política" id="toc-el-sistema-de-asesoramiento-económico-técnica-o-política" class="nav-link" data-scroll-target="#el-sistema-de-asesoramiento-económico-técnica-o-política">El Sistema de Asesoramiento Económico: ¿Técnica o Política?</a>
+  <ul class="collapse">
+  <li><a href="#el-abismo-de-información" id="toc-el-abismo-de-información" class="nav-link" data-scroll-target="#el-abismo-de-información">El Abismo de Información</a></li>
+  </ul></li>
+  <li><a href="#el-viaje-temporal-de-la-política-económica-las-6-fases" id="toc-el-viaje-temporal-de-la-política-económica-las-6-fases" class="nav-link" data-scroll-target="#el-viaje-temporal-de-la-política-económica-las-6-fases">El Viaje Temporal de la Política Económica: Las 6 Fases</a></li>
+  <li><a href="#dimensiones-adicionales-de-la-elaboración-operativa" id="toc-dimensiones-adicionales-de-la-elaboración-operativa" class="nav-link" data-scroll-target="#dimensiones-adicionales-de-la-elaboración-operativa">Dimensiones Adicionales de la Elaboración Operativa</a>
+  <ul class="collapse">
+  <li><a href="#los-retardos-lags-de-la-política-económica" id="toc-los-retardos-lags-de-la-política-económica" class="nav-link" data-scroll-target="#los-retardos-lags-de-la-política-económica">1. Los Retardos (Lags) de la Política Económica</a></li>
+  <li><a href="#los-actores-complementarios-e-internacionales" id="toc-los-actores-complementarios-e-internacionales" class="nav-link" data-scroll-target="#los-actores-complementarios-e-internacionales">2. Los Actores Complementarios e Internacionales</a></li>
+  <li><a href="#el-problema-de-la-coordinación-e-interdependencia" id="toc-el-problema-de-la-coordinación-e-interdependencia" class="nav-link" data-scroll-target="#el-problema-de-la-coordinación-e-interdependencia">3. El Problema de la Coordinación e Interdependencia</a></li>
+  <li><a href="#tipología-del-asesoramiento-económico" id="toc-tipología-del-asesoramiento-económico" class="nav-link" data-scroll-target="#tipología-del-asesoramiento-económico">4. Tipología del Asesoramiento Económico</a></li>
+  </ul></li>
+  <li><a href="#conclusiones-generales" id="toc-conclusiones-generales" class="nav-link" data-scroll-target="#conclusiones-generales">Conclusiones Generales</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Análisis: Anatomía de la Decisión Pública</h1>
+<p class="subtitle lead">Control de Lectura - Unidad 1</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-contents">
+             <p>Erick Fabricio Condoy Seraquive </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">21 de abril de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introducción" class="level1">
+<h1>Introducción</h1>
+<p><em>Análisis basado en: Cuadrado Roura (2014), Capítulo 4: “La elaboración de la política económica”.</em></p>
+<p>La política económica se desenvuelve en un ecosistema donde la técnica, la presión social y el poder institucional convergen. Según <span class="citation" data-cites="cuadrado2014politica">Cuadrado Roura et&nbsp;al. (<a href="#ref-cuadrado2014politica" role="doc-biblioref">2014</a>)</span>, la “anatomía” de este proceso se divide en tres ámbitos fundamentales que determinan la viabilidad y el éxito de cualquier medida.</p>
+<hr>
+</section>
+<section id="los-tres-ámbitos-del-ecosistema-político-económico" class="level1">
+<h1>Los Tres Ámbitos del Ecosistema Político-Económico</h1>
+<p>A continuación, se profundiza en cada ámbito con su definición teórica y su aplicación práctica en la realidad ecuatoriana.</p>
+<section id="ámbito-de-generación-de-opciones" class="level2">
+<h2 class="anchored" data-anchor-id="ámbito-de-generación-de-opciones">1. Ámbito de Generación de Opciones</h2>
+<p><strong>Definición:</strong> Es el nivel técnico-administrativo donde se identifican los problemas económicos y se diseñan las alternativas de solución. Aquí predomina el conocimiento experto y el análisis de datos. - <strong>Actores</strong>: Técnicos ministeriales, asesores, consultores, Banco Central.</p>
+<blockquote class="blockquote">
+<p>[!TIP] <strong>Caso Ecuador:</strong> El equipo técnico del <strong>Ministerio de Economía y Finanzas (MEF)</strong> diseñando la Proforma Presupuestaria General del Estado.</p>
+<ul>
+<li><strong>¿Por qué? (Causa):</strong> Porque el país presenta un déficit fiscal recurrente y requiere una asignación eficiente de recursos limitados.</li>
+<li><strong>¿Para qué? (Objetivo):</strong> Para establecer el techo de gasto, asegurar el financiamiento y cumplir con las metas macroeconómicas (ej. metas de inflación y crecimiento).</li>
+</ul>
+</blockquote>
+</section>
+<section id="ámbito-de-proyección-de-influencias" class="level2">
+<h2 class="anchored" data-anchor-id="ámbito-de-proyección-de-influencias">2. Ámbito de Proyección de Influencias</h2>
+<p><strong>Definición:</strong> Es el nivel social y de intermediación donde los grupos de interés (lobbies) intentan sesgar las opciones generadas hacia sus propios beneficios. Es el ámbito de la presión y la negociación extra-institucional. - <strong>Actores</strong>: Sindicatos, cámaras empresariales, movimientos sociales, organismos internacionales.</p>
+<blockquote class="blockquote">
+<p>[!IMPORTANT] <strong>Caso Ecuador:</strong> La <strong>CONAIE</strong> y las <strong>Cámaras de la Producción</strong> frente a la focalización de subsidios a los combustibles.</p>
+<ul>
+<li><strong>¿Por qué? (Causa):</strong> Por el conflicto distributivo; la subida de precios afecta el costo de vida (CONAIE) pero la permanencia del subsidio genera distorsiones fiscales (Cámaras).</li>
+<li><strong>¿Para qué? (Objetivo):</strong> Para forzar al gobierno a modificar el diseño original de la política, buscando proteger el poder adquisitivo (social) o mejorar la competitividad estatal (empresarial).</li>
+</ul>
+</blockquote>
+</section>
+<section id="ámbito-de-decisión" class="level2">
+<h2 class="anchored" data-anchor-id="ámbito-de-decisión">3. Ámbito de Decisión</h2>
+<p><strong>Definición:</strong> Es el nivel institucional donde se ejerce la autoridad soberana para elegir una de las opciones y convertirla en norma legal. Es donde reside la responsabilidad política final. - <strong>Actores</strong>: El Presidente de la República (Ejecutivo) y la Asamblea Nacional (Legislativo).</p>
+<blockquote class="blockquote">
+<p>[!CAUTION] <strong>Caso Ecuador:</strong> La aprobación de la <strong>Ley para Enfrentar el Conflicto Armado Interno</strong> (Alza del IVA al 15%).</p>
+<ul>
+<li><strong>¿Por qué? (Causa):</strong> Potestad constitucional del Ejecutivo para enviar proyectos urgentes y del Parlamento para aprobarlos o modificarlos.</li>
+<li><strong>¿Para qué? (Objetivo):</strong> Para institucionalizar el recaudo tributario necesario, dotando de legalidad y obligatoriedad a la medida para financiar la seguridad.</li>
+</ul>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="representación-visual-del-ecosistema" class="level1">
+<h1>Representación Visual del Ecosistema</h1>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    subgraph G [Ámbito de Generación]
+        T[Técnicos MEF/BCE] --&gt;|Diseño de Alternativas| O[Opciones Técnicas]
+    end
+    
+    subgraph I [Ámbito de Proyección de Influencias]
+        O --&gt;|Presión / Cabildeo| P[Lobbies / CONAIE / Cámaras]
+        P --&gt;|Demanda de Cambios| O
+    end
+    
+    subgraph D [Ámbito de Decisión]
+        O --&gt;|Elección Legal| L[Ejecutivo / Asamblea]
+        L --&gt;|Ley / Decreto| Done[Política Ejecutada]
+    end
+
+    style G fill:#e1f5fe,stroke:#01579b
+    style I fill:#fff3e0,stroke:#e65100
+    style D fill:#f1f8e9,stroke:#33691e
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="expansión-teórica-por-qué-fallan-las-políticas-en-ecuador" class="level1">
+<h1>Expansión Teórica: Por qué fallan las políticas en Ecuador</h1>
+<p>Más allá de la estructura formal, <span class="citation" data-cites="cuadrado2014politica">Cuadrado Roura et&nbsp;al. (<a href="#ref-cuadrado2014politica" role="doc-biblioref">2014</a>)</span> introduce conceptos de la <strong>Teoría de la Elección Pública (Public Choice)</strong> que explican las ineficiencias del sector público ecuatoriano.</p>
+<section id="el-ciclo-político-económico-y-la-ignorancia-racional" class="level2">
+<h2 class="anchored" data-anchor-id="el-ciclo-político-económico-y-la-ignorancia-racional">1. El Ciclo Político Económico y la Ignorancia Racional</h2>
+<p>La teoría sugiere que los políticos maximizan votos y los votantes practican una “ignorancia racional” (el costo de informarse es mayor al beneficio percibido de un solo voto). - <strong>En Ecuador:</strong> Esto se observa en el incremento del gasto corriente y la inauguración de obras superficiales meses antes de las elecciones, postergando reformas estructurales (ej. eliminación de subsidios) para no perder popularidad.</p>
+</section>
+<section id="la-burocracia-y-la-búsqueda-de-rentas-rent-seeking" class="level2">
+<h2 class="anchored" data-anchor-id="la-burocracia-y-la-búsqueda-de-rentas-rent-seeking">2. La Burocracia y la Búsqueda de Rentas (Rent-seeking)</h2>
+<p>William Niskanen postula que los burócratas buscan maximizar el presupuesto de sus departamentos para ganar prestigio y poder, no necesariamente para optimizar el servicio. - <strong>Búsqueda de Rentas en EC:</strong> Lobby de sectores empresariales para obtener aranceles protectores, usando el Estado para obtener beneficios sin mejorar la productividad.</p>
+</section>
+<section id="fallos-del-mercado-vs.-fallos-del-estado-en-ecuador" class="level2">
+<h2 class="anchored" data-anchor-id="fallos-del-mercado-vs.-fallos-del-estado-en-ecuador">3. Fallos del Mercado vs.&nbsp;Fallos del Estado en Ecuador</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tipo de Fallo</th>
+<th style="text-align: left;">Concepto Teórico</th>
+<th style="text-align: left;">Manifestación en Ecuador</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mercado</strong></td>
+<td style="text-align: left;">Externalidades Negativas</td>
+<td style="text-align: left;">Contaminación minera y petrolera en la Amazonía.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Estado</strong></td>
+<td style="text-align: left;">Internalidades</td>
+<td style="text-align: left;">Agencias que priorizan su supervivencia (gasto en consultorías).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mercado</strong></td>
+<td style="text-align: left;">Monopolios Naturales</td>
+<td style="text-align: left;">Deficiencias crónicas en la distribución eléctrica.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Estado</strong></td>
+<td style="text-align: left;">Ignorancia Racional</td>
+<td style="text-align: left;">Votantes que eligen candidatos basándose en promesas sin respaldo fiscal.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="el-sistema-de-asesoramiento-económico-técnica-o-política" class="level1">
+<h1>El Sistema de Asesoramiento Económico: ¿Técnica o Política?</h1>
+<p>El asesoramiento económico en Ecuador enfrenta una brecha técnica-política: el asesor recomienda “medios” eficientes, pero el político elige basado en “fines” electorales.</p>
+<section id="el-abismo-de-información" class="level3">
+<h3 class="anchored" data-anchor-id="el-abismo-de-información">El Abismo de Información</h3>
+<p>El decisor político sufre de <strong>asimetría de información</strong>; depende del técnico pero lo ignora si los datos impactan su capital político.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    subgraph A [El Técnico / Asesor]
+        T[Datos y Evidencia] --&gt;|Genera Opciones| D[Diseño Óptimo]
+    end
+    
+    subgraph B [El Político / Decisor]
+        P[Búsqueda de Votos] --&gt;|Filtra Opciones| R[Elección Subóptima]
+    end
+    
+    D -.-&gt;|Bloqueo por Costo Político| R
+    R --&gt;|Legitimación| Done[Política Ejecutada]
+
+    style A fill:#e3f2fd,stroke:#1e88e5
+    style B fill:#fce4ec,stroke:#d81b60
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>[!IMPORTANT] El éxito de la política económica depende de que el asesoramiento técnico sea vinculante y no solo un accesorio de legitimación para decisiones ya tomadas.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="el-viaje-temporal-de-la-política-económica-las-6-fases" class="level1">
+<h1>El Viaje Temporal de la Política Económica: Las 6 Fases</h1>
+<p>Más allá de los ámbitos, la decisión pública recorre un camino cronológico. <span class="citation" data-cites="cuadrado2014politica">Cuadrado Roura et&nbsp;al. (<a href="#ref-cuadrado2014politica" role="doc-biblioref">2014</a>)</span> define seis etapas críticas. A continuación, se aplican al caso de la <strong>Estrategia de Seguridad Nacional frente a la Inacción Bilateral de Colombia</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Fase</th>
+<th style="text-align: left;">Descripción Teórica</th>
+<th style="text-align: left;">Aplicación: Seguridad y Narcotráfico (Fricción con Colombia)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1. Reconocimiento</strong></td>
+<td style="text-align: left;">Detección de síntomas y brechas entre la realidad y el objetivo.</td>
+<td style="text-align: left;">Detección de un aumento crítico en los niveles de violencia y control narcocriminal en la frontera norte, exacerbado por el vacío de control en el lado colombiano.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2. Análisis</strong></td>
+<td style="text-align: left;">Diagnóstico técnico y estimación de efectos.</td>
+<td style="text-align: left;">Evaluación técnica sobre el costo de la defensa interna. Se analiza el riesgo de sostener una guerra contra el terrorismo de forma unilateral y sin inteligencia compartida efectiva.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3. Diseño</strong></td>
+<td style="text-align: left;">Elaboración de medidas y selección de instrumentos.</td>
+<td style="text-align: left;">Declaración de <strong>Conflicto Armado Interno</strong> y diseño del <strong>Plan Fénix</strong>. Se eligen instrumentos de movilización militar y financiamiento de guerra (unilaterales).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4. Consultas</strong></td>
+<td style="text-align: left;">Dialogo con actores afectados y organismos.</td>
+<td style="text-align: left;">Ecuador solicita apoyo logístico y operativo a Colombia; sin embargo, se detecta que <strong>Colombia no apoya el enfoque de militarización</strong>, generando un obstáculo en la cooperación regional.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5. Discusión</strong></td>
+<td style="text-align: left;">Legitimación política de la medida elegida.</td>
+<td style="text-align: left;">La Asamblea Nacional y el Gabinete discuten la necesidad de recaudar fondos propios para la seguridad, asumiendo que no habrá apoyo logístico significativo del vecino.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>6. Ejecución</strong></td>
+<td style="text-align: left;">Implementación operativa y control.</td>
+<td style="text-align: left;">Despliegue masivo de las <strong>FF.AA. en la frontera norte</strong> para taponar los flujos criminales que Colombia no controla, asumiendo el costo total de la vigilancia fronteriza.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p>[!CAUTION] El viaje temporal se vuelve más complejo cuando falla la fase de <strong>Consultas Internacionales</strong>, obligando al Estado a retroceder al <strong>Diseño</strong> de medidas de financiamiento interno (ej. impuestos a la seguridad).</p>
+</blockquote>
+<hr>
+</section>
+<section id="dimensiones-adicionales-de-la-elaboración-operativa" class="level1">
+<h1>Dimensiones Adicionales de la Elaboración Operativa</h1>
+<p>Para completar el análisis del Capítulo 4 de <span class="citation" data-cites="cuadrado2014politica">Cuadrado Roura et&nbsp;al. (<a href="#ref-cuadrado2014politica" role="doc-biblioref">2014</a>)</span>, es imperativo abordar los factores técnicos que condicionan la efectividad de la política en Ecuador.</p>
+<section id="los-retardos-lags-de-la-política-económica" class="level2">
+<h2 class="anchored" data-anchor-id="los-retardos-lags-de-la-política-económica">1. Los Retardos (Lags) de la Política Económica</h2>
+<p>Una de las mayores frustraciones sociales es que los resultados económicos no son inmediatos. Esto se debe a los <strong>retardos</strong>:</p>
+<ul>
+<li><strong>Retardo Interno (Reconocimiento + Acción)</strong>: Tiempo que tarda el Estado en admitir un problema (ej. caída de reserva internacional) y aprobar una ley. En Ecuador, la polarización legislativa suele extender este retardo meses.</li>
+<li><strong>Retardo Externo (Efectividad)</strong>: Tiempo que tarda la medida en impactar la economía real. Ej.: Un recorte de tasas de interés tarda de 6 a 18 meses en dinamizar el consumo.</li>
+</ul>
+</section>
+<section id="los-actores-complementarios-e-internacionales" class="level2">
+<h2 class="anchored" data-anchor-id="los-actores-complementarios-e-internacionales">2. Los Actores Complementarios e Internacionales</h2>
+<p>Aunque el Ejecutivo y Legislativo deciden, existen “actores sombra” con peso determinante: * <strong>Organismos Internacionales (FMI, Banco Mundial, BID)</strong>: Actúan en el <strong>Ámbito de Generación de Opciones</strong>. Mediante “cartas de intención”, pre-diseñan las medidas de ajuste que Ecuador debe adoptar para acceder a crédito. * <strong>Partidos Políticos</strong>: Actúan como filtros en la fase de <strong>Discusión Parlamentaria</strong>, subordinando la racionalidad económica a la supervivencia electoral.</p>
+</section>
+<section id="el-problema-de-la-coordinación-e-interdependencia" class="level2">
+<h2 class="anchored" data-anchor-id="el-problema-de-la-coordinación-e-interdependencia">3. El Problema de la Coordinación e Interdependencia</h2>
+<p>La política económica no es un silo único. En Ecuador existe un conflicto constante de coordinación: * <strong>Coordinación Vertical</strong>: Tensiones entre el Gobierno Central y los <strong>GADs</strong> por el reparto de recursos (Modelo de Equidad Territorial). * <strong>Coordinación Horizontal</strong>: Fricciones entre la política fiscal (Gasto del MEF) y la política monetaria/financiera (Liquidez del BCE), especialmente en dolarización donde el BCE tiene margen limitado.</p>
+</section>
+<section id="tipología-del-asesoramiento-económico" class="level2">
+<h2 class="anchored" data-anchor-id="tipología-del-asesoramiento-económico">4. Tipología del Asesoramiento Económico</h2>
+<p>Cuadrado Roura distingue entre el papel del economista según su rol: * <strong>Asesor Interno</strong>: Técnicos de carrera en el MEF o SENPLADES (Saber pragmático). * <strong>Asesor Externo</strong>: Académicos y think tanks que aportan visiones de largo plazo (Saber teórico), pero que suelen ser ignorados en emergencias fiscales.</p>
+<hr>
+</section>
+</section>
+<section id="conclusiones-generales" class="level1">
+<h1>Conclusiones Generales</h1>
+<p>El análisis exhaustivo del Capítulo 4 de Cuadrado Roura adaptado al Ecuador revela que la Política Económica es un proceso profundamente humano y político. La “Anatomía” no es solo una estructura de 6 fases y 3 ámbitos, sino una lucha constante contra los <strong>retardos temporales</strong>, la falta de <strong>coordinación institucional</strong> y la presión de <strong>actores internacionales</strong>. Comprender estos mecanismos es vital para cualquier economista que busque diseñar soluciones viables en el entorno de dolarización y fragilidad fiscal del país.</p>
+</section>
+<section id="referencias" class="level1">
+<h1>Referencias</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-cuadrado2014politica" class="csl-entry" role="listitem">
+Cuadrado Roura, Juan Ramón, Tomás Mancha Navarro, José Emilio Villena Peña, et&nbsp;al. 2014. <em>Pol<span>í</span>tica econ<span>ó</span>mica. Elaboraci<span>ó</span>n, objetivos e instrumentos</em>. 5.ª ed. McGraw-Hill Education.
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

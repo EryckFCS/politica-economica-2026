@@ -1,32 +1,40 @@
-# 🏛️ LPE - Laboratorio de Política Económica 2026
+# LPE - Laboratorio de Política Económica 2026
 
-## Política Económica (Ciclo 7) - Universidad Nacional de Loja
+El laboratorio organiza la documentación académica del curso y un soporte técnico mínimo para mantener la evidencia, la bibliografía y el acceso al motor RAG central.
 
-El **Laboratorio de Política Económica (LPE)** se enfoca en el modelado y evaluación de intervenciones estatales, objetivos macroeconómicos e instrumentos de política.
+## Qué contiene el repositorio
 
----
+- [Índice documental](docs/README.md): navegación por sílabo, lecturas y evidencia disponible.
+- [Sílabo](docs/syllabus/): marco formal de la materia.
+- [Lecturas](docs/readings/): bibliografía y material de apoyo.
+- [Evidencia U1](docs/evidence/U1-Elaboracion-Politica-Economica/AA-01-Aplicacion-Marco-Conceptual/index.qmd): actividad práctica principal disponible hoy.
+- [Enunciado de la tarea U1](docs/evidence/U1-Elaboracion-Politica-Economica/tarea_AA.md): consigna de la actividad.
 
-## 🏗️ Arquitectura de Documentación
+## Soporte técnico
 
-Los recursos esenciales para el seguimiento académico se encuentran en:
+- [main.py](main.py): resumen de estado del nodo.
+- [src/core/config.py](src/core/config.py): descubrimiento de raíz y carga opcional de `config/params.yaml`.
+- [src/core/brain.py](src/core/brain.py): wrapper sobre `ecs_quantitative.memory.agent_memory.AgentMemory`.
+- [scripts/sync_brain.py](scripts/sync_brain.py): ingestión de PDFs desde `bibliography/` hacia la colección `politica_economica`.
 
-- **[Sílabo de la Materia](docs/syllabus/SYLLABUS.pdf)**: Marco doctrinal y objetivos.
-- **[Lecturas y Referencias](docs/readings/)**: Libros de texto y lecturas complementarias (Cuadrado Roura, et al.).
-- **[Arquitectura](ARCHITECTURE.md)**: Estructura de capas para el análisis de políticas.
-- **[Roadmap](ROADMAP.md)**: Plan de avance por unidades.
-
----
-
-## 🚀 Guía de Inicio
+## Mantenimiento y validación
 
 ```bash
-# Configuración del laboratorio
 uv sync
-export PYTHONPATH=src
-
-# Ejecución de análisis de política
-python src/orchestration/M01-U1-LPE-Master_Build.py
+uv run python main.py
+uv run pytest
 ```
 
----
-*LPE - Centro de Investigación Econométrica. UNL.*
+Para reindexar la bibliografía local:
+
+```bash
+uv run python scripts/sync_brain.py
+```
+
+Para un smoke manual de RAG, fuera de CI:
+
+```bash
+uv run python scratch/test_pe_rag.py
+```
+
+La carpeta `docs/evidence/` concentra el material de entrega actual. `docs/README.md` es el índice canónico de lectura.

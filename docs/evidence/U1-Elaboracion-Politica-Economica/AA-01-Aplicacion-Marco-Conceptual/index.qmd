@@ -1,0 +1,65 @@
+---
+# El contenido se hereda de _quarto.yml y _metadata.yml a nivel de proyecto y carpeta.
+---
+
+# Identificación y Clasificación
+
+Para el presente análisis, se ha seleccionado el Servicio Ampliado del Fondo (SAF/EFF) alcanzado entre el Gobierno de Ecuador y el Fondo Monetario Internacional (FMI) en mayo de 2024, por un monto de US$ 4.000 millones y una duración de 48 meses según la publicación oficial del FMI (2024).
+
+## Taxonomía de la Política bajo la visión de Cuadrado Roura
+La clasificación tipológica de esta política, fundamentada en los criterios taxonómicos clásicos, se define de la siguiente manera:
+
+*   Orientación Básica: Se clasifica como una política de proceso y de ordenación. Según Cuadrado Roura (2014) en su obra sobre Política Económica, las políticas de proceso actúan sobre los desequilibrios coyunturales, mientras que las de ordenación buscan establecer o modificar el marco de actuación de la economía.
+*   Carácter de los Instrumentos: Es predominantemente una política cuantitativa combinada con políticas cualitativas que conllevan reformas. Las variaciones en el IVA fijado en el 15% son ajustes cuantitativos, mientras que la focalización de subsidios representa un cambio cualitativo estructural.
+*   Nivel de Actuación: Taxonómicamente es una política macroeconómica. Su núcleo de atención son los agregados macroeconómicos para lograr la estabilidad bi-unívoca entre sostenibilidad fiscal y balanza de pagos.
+*   Dimensión Temporal: Se define como una política de mediano plazo, con un horizonte de ejecución de 48 meses.
+
+# Fines, Objetivos e Instrumentos
+
+Siguiendo la lógica de la "jerarquía de la política económica", distinguimos los siguientes niveles en el Acuerdo SAF 2024:
+
+## Fines Generales definidos como Ejes Estratégicos
+Los fines que motivan esta política son la estabilidad institucional y la sostenibilidad del sistema monetario con el fin de blindar la dolarización. Estos representan propósitos de carácter genérico que solo tienen sentido en la medida en que se traducen en objetivos concretos.
+
+## Objetivos Económicos y Sociales
+1.  Consolidación Fiscal: Reducción del déficit primario.
+2.  Protección Social: Establecimiento de pisos de gasto social.
+3.  Estabilidad Externa: Acumulación de reservas internacionales.
+
+## Instrumentos Específicos
+*   Tributarios: Incremento del Impuesto al Valor Agregado (IVA) al 15% (Primicias, 2024).
+*   Gasto Público: Focalización de los subsidios a los combustibles y optimización del gasto.
+
+# Relación Instrumentos-Objetivos
+
+La siguiente matriz presenta el mapeo de sinergias y conflictos entre los principales instrumentos del Acuerdo SAF 2024 y los objetivos de la política económica analizada.
+
+::: {#tbl-matriz tbl-colwidths="[35,13,13,13,13,13]"}
+| Instrumento | Crecimiento | Empleo | Fiscal | Equidad | Exterior |
+|:------------------------|:---:|:---:|:---:|:---:|:---:|
+| Alza de IVA al 15% | - | | + | | + |
+| Focalización Subsidios | | | + | + | |
+| Pisos de Gasto Social | | | | + | |
+
+\fuente{Elaboración propia con base en el marco teórico de Cuadrado Roura (2014), el Acuerdo SAF 2024 (IMF, 2024) y datos de seguimiento de Primicias (2024).}
+
+Matriz de Relación entre Instrumentos y Objetivos de Política Económica (2024)
+:::
+
+## Análisis de Coherencia sobre el Objetivo de Empleo
+Es pertinente observar que los instrumentos analizados no muestran un efecto positivo directo sobre el indicador de empleo. Esta neutralidad es económicamente coherente con la naturaleza del Acuerdo SAF 2024, el cual es un programa de estabilización y consolidación fiscal, no de estímulo directo a la demanda agregada. La teoría económica advierte que los ajustes impositivos (IVA) y la reducción de subsidios tienen efectos contractivos en el corto plazo, priorizando la solvencia del Estado sobre la expansión inmediata del mercado laboral.
+
+## Conclusión del Análisis
+La política económica implementada muestra una fuerte prioridad hacia la sostenibilidad fiscal. El cumplimiento de las metas del FMI se presenta como la vía para garantizar la solvencia del Estado, asumiendo costos directos sobre el consumo pero buscando compensar a los sectores vulnerables mediante transferencias monetarias condicionadas, tal como se detalla en el comunicado oficial 24/197 del FMI.
+
+\newpage
+
+# Referencias
+
+\begin{referenciasAPA}
+Cuadrado Roura, J. R. (2014). *Política Económica: Elaboración, objetivos e instrumentos*. Quinta edición. Madrid: McGraw-Hill.
+
+International Monetary Fund. (2024, 31 de mayo). *IMF Executive Board Approves 48-Month US\$4 Billion EFF Arrangement for Ecuador*. Press Release No. 24/197. \url{https://www.imf.org/en/news/articles/2024/05/31/pr-24197-ecuador-imf-board-approves-48-month-us-4-billion-eff-arrangement}
+
+Primicias. (2024). *FMI y Ecuador llegan a un acuerdo técnico para nuevo crédito por USD 4.000 millones*. \url{https://www.primicias.ec/noticias/economia/fmi-acuerdo-tecnico-daniel-noboa-ecuador/}
+\end{referenciasAPA}

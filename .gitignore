@@ -5,6 +5,22 @@ build/
 dist/
 wheels/
 *.egg-info
+.coverage
+htmlcov/
+.pytest_cache/
 
 # Virtual environments
 .venv
+
+# Quarto
+/.quarto/
+**/*.quarto_ipynb
+
+# Archives and Large Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Specific Exclusions
+Photos*/

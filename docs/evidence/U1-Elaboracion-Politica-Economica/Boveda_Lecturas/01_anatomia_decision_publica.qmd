@@ -1,0 +1,185 @@
+---
+title: "Análisis: Anatomía de la Decisión Pública"
+subtitle: "Control de Lectura - Unidad 1"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-21"
+lang: es-ES
+bibliography: /home/erick-fcs/Documentos/universidad/07_Ciclo/septimo_ciclo/economic_policy/references.bib
+format:
+  html:
+    toc: true
+    code-fold: true
+    theme: cosmo
+---
+
+# Introducción
+*Análisis basado en: Cuadrado Roura (2014), Capítulo 4: "La elaboración de la política económica".*
+
+La política económica se desenvuelve en un ecosistema donde la técnica, la presión social y el poder institucional convergen. Según @cuadrado2014politica, la "anatomía" de este proceso se divide en tres ámbitos fundamentales que determinan la viabilidad y el éxito de cualquier medida.
+
+---
+
+# Los Tres Ámbitos del Ecosistema Político-Económico
+
+A continuación, se profundiza en cada ámbito con su definición teórica y su aplicación práctica en la realidad ecuatoriana.
+
+## 1. Ámbito de Generación de Opciones
+**Definición:** Es el nivel técnico-administrativo donde se identifican los problemas económicos y se diseñan las alternativas de solución. Aquí predomina el conocimiento experto y el análisis de datos.
+- **Actores**: Técnicos ministeriales, asesores, consultores, Banco Central.
+
+> [!TIP]
+> **Caso Ecuador:** El equipo técnico del **Ministerio de Economía y Finanzas (MEF)** diseñando la Proforma Presupuestaria General del Estado.
+>
+> - **¿Por qué? (Causa):** Porque el país presenta un déficit fiscal recurrente y requiere una asignación eficiente de recursos limitados.
+> - **¿Para qué? (Objetivo):** Para establecer el techo de gasto, asegurar el financiamiento y cumplir con las metas macroeconómicas (ej. metas de inflación y crecimiento).
+
+## 2. Ámbito de Proyección de Influencias
+**Definición:** Es el nivel social y de intermediación donde los grupos de interés (lobbies) intentan sesgar las opciones generadas hacia sus propios beneficios. Es el ámbito de la presión y la negociación extra-institucional.
+- **Actores**: Sindicatos, cámaras empresariales, movimientos sociales, organismos internacionales.
+
+> [!IMPORTANT]
+> **Caso Ecuador:** La **CONAIE** y las **Cámaras de la Producción** frente a la focalización de subsidios a los combustibles.
+>
+> - **¿Por qué? (Causa):** Por el conflicto distributivo; la subida de precios afecta el costo de vida (CONAIE) pero la permanencia del subsidio genera distorsiones fiscales (Cámaras).
+> - **¿Para qué? (Objetivo):** Para forzar al gobierno a modificar el diseño original de la política, buscando proteger el poder adquisitivo (social) o mejorar la competitividad estatal (empresarial).
+
+## 3. Ámbito de Decisión
+**Definición:** Es el nivel institucional donde se ejerce la autoridad soberana para elegir una de las opciones y convertirla en norma legal. Es donde reside la responsabilidad política final.
+- **Actores**: El Presidente de la República (Ejecutivo) y la Asamblea Nacional (Legislativo).
+
+> [!CAUTION]
+> **Caso Ecuador:** La aprobación de la **Ley para Enfrentar el Conflicto Armado Interno** (Alza del IVA al 15%).
+>
+> - **¿Por qué? (Causa):** Potestad constitucional del Ejecutivo para enviar proyectos urgentes y del Parlamento para aprobarlos o modificarlos.
+> - **¿Para qué? (Objetivo):** Para institucionalizar el recaudo tributario necesario, dotando de legalidad y obligatoriedad a la medida para financiar la seguridad.
+
+---
+
+# Representación Visual del Ecosistema
+
+```{mermaid}
+graph TD
+    subgraph G [Ámbito de Generación]
+        T[Técnicos MEF/BCE] -->|Diseño de Alternativas| O[Opciones Técnicas]
+    end
+    
+    subgraph I [Ámbito de Proyección de Influencias]
+        O -->|Presión / Cabildeo| P[Lobbies / CONAIE / Cámaras]
+        P -->|Demanda de Cambios| O
+    end
+    
+    subgraph D [Ámbito de Decisión]
+        O -->|Elección Legal| L[Ejecutivo / Asamblea]
+        L -->|Ley / Decreto| Done[Política Ejecutada]
+    end
+
+    style G fill:#e1f5fe,stroke:#01579b
+    style I fill:#fff3e0,stroke:#e65100
+    style D fill:#f1f8e9,stroke:#33691e
+```
+
+---
+
+# Expansión Teórica: Por qué fallan las políticas en Ecuador
+
+Más allá de la estructura formal, @cuadrado2014politica introduce conceptos de la **Teoría de la Elección Pública (Public Choice)** que explican las ineficiencias del sector público ecuatoriano.
+
+## 1. El Ciclo Político Económico y la Ignorancia Racional
+La teoría sugiere que los políticos maximizan votos y los votantes practican una "ignorancia racional" (el costo de informarse es mayor al beneficio percibido de un solo voto).
+- **En Ecuador:** Esto se observa en el incremento del gasto corriente y la inauguración de obras superficiales meses antes de las elecciones, postergando reformas estructurales (ej. eliminación de subsidios) para no perder popularidad.
+
+## 2. La Burocracia y la Búsqueda de Rentas (Rent-seeking)
+William Niskanen postula que los burócratas buscan maximizar el presupuesto de sus departamentos para ganar prestigio y poder, no necesariamente para optimizar el servicio.
+- **Búsqueda de Rentas en EC:** Lobby de sectores empresariales para obtener aranceles protectores, usando el Estado para obtener beneficios sin mejorar la productividad.
+
+## 3. Fallos del Mercado vs. Fallos del Estado en Ecuador
+
+| Tipo de Fallo | Concepto Teórico | Manifestación en Ecuador |
+| :--- | :--- | :--- |
+| **Mercado** | Externalidades Negativas | Contaminación minera y petrolera en la Amazonía. |
+| **Estado** | Internalidades | Agencias que priorizan su supervivencia (gasto en consultorías). |
+| **Mercado** | Monopolios Naturales | Deficiencias crónicas en la distribución eléctrica. |
+| **Estado** | Ignorancia Racional | Votantes que eligen candidatos basándose en promesas sin respaldo fiscal. |
+
+---
+
+# El Sistema de Asesoramiento Económico: ¿Técnica o Política?
+
+El asesoramiento económico en Ecuador enfrenta una brecha técnica-política: el asesor recomienda "medios" eficientes, pero el político elige basado en "fines" electorales.
+
+### El Abismo de Información
+El decisor político sufre de **asimetría de información**; depende del técnico pero lo ignora si los datos impactan su capital político.
+
+```{mermaid}
+graph LR
+    subgraph A [El Técnico / Asesor]
+        T[Datos y Evidencia] -->|Genera Opciones| D[Diseño Óptimo]
+    end
+    
+    subgraph B [El Político / Decisor]
+        P[Búsqueda de Votos] -->|Filtra Opciones| R[Elección Subóptima]
+    end
+    
+    D -.->|Bloqueo por Costo Político| R
+    R -->|Legitimación| Done[Política Ejecutada]
+
+    style A fill:#e3f2fd,stroke:#1e88e5
+    style B fill:#fce4ec,stroke:#d81b60
+```
+
+> [!IMPORTANT]
+> El éxito de la política económica depende de que el asesoramiento técnico sea vinculante y no solo un accesorio de legitimación para decisiones ya tomadas.
+
+---
+
+# El Viaje Temporal de la Política Económica: Las 6 Fases
+
+Más allá de los ámbitos, la decisión pública recorre un camino cronológico. @cuadrado2014politica define seis etapas críticas. A continuación, se aplican al caso de la **Estrategia de Seguridad Nacional frente a la Inacción Bilateral de Colombia**.
+
+| Fase | Descripción Teórica | Aplicación: Seguridad y Narcotráfico (Fricción con Colombia) |
+| :--- | :--- | :--- |
+| **1. Reconocimiento** | Detección de síntomas y brechas entre la realidad y el objetivo. | Detección de un aumento crítico en los niveles de violencia y control narcocriminal en la frontera norte, exacerbado por el vacío de control en el lado colombiano. |
+| **2. Análisis** | Diagnóstico técnico y estimación de efectos. | Evaluación técnica sobre el costo de la defensa interna. Se analiza el riesgo de sostener una guerra contra el terrorismo de forma unilateral y sin inteligencia compartida efectiva. |
+| **3. Diseño** | Elaboración de medidas y selección de instrumentos. | Declaración de **Conflicto Armado Interno** y diseño del **Plan Fénix**. Se eligen instrumentos de movilización militar y financiamiento de guerra (unilaterales). |
+| **4. Consultas** | Dialogo con actores afectados y organismos. | Ecuador solicita apoyo logístico y operativo a Colombia; sin embargo, se detecta que **Colombia no apoya el enfoque de militarización**, generando un obstáculo en la cooperación regional. |
+| **5. Discusión** | Legitimación política de la medida elegida. | La Asamblea Nacional y el Gabinete discuten la necesidad de recaudar fondos propios para la seguridad, asumiendo que no habrá apoyo logístico significativo del vecino. |
+| **6. Ejecución** | Implementación operativa y control. | Despliegue masivo de las **FF.AA. en la frontera norte** para taponar los flujos criminales que Colombia no controla, asumiendo el costo total de la vigilancia fronteriza. |
+
+> [!CAUTION]
+> El viaje temporal se vuelve más complejo cuando falla la fase de **Consultas Internacionales**, obligando al Estado a retroceder al **Diseño** de medidas de financiamiento interno (ej. impuestos a la seguridad).
+
+---
+
+# Dimensiones Adicionales de la Elaboración Operativa
+
+Para completar el análisis del Capítulo 4 de @cuadrado2014politica, es imperativo abordar los factores técnicos que condicionan la efectividad de la política en Ecuador.
+
+## 1. Los Retardos (Lags) de la Política Económica
+Una de las mayores frustraciones sociales es que los resultados económicos no son inmediatos. Esto se debe a los **retardos**:
+
+*   **Retardo Interno (Reconocimiento + Acción)**: Tiempo que tarda el Estado en admitir un problema (ej. caída de reserva internacional) y aprobar una ley. En Ecuador, la polarización legislativa suele extender este retardo meses.
+*   **Retardo Externo (Efectividad)**: Tiempo que tarda la medida en impactar la economía real. Ej.: Un recorte de tasas de interés tarda de 6 a 18 meses en dinamizar el consumo.
+
+## 2. Los Actores Complementarios e Internacionales
+Aunque el Ejecutivo y Legislativo deciden, existen "actores sombra" con peso determinante:
+*   **Organismos Internacionales (FMI, Banco Mundial, BID)**: Actúan en el **Ámbito de Generación de Opciones**. Mediante "cartas de intención", pre-diseñan las medidas de ajuste que Ecuador debe adoptar para acceder a crédito.
+*   **Partidos Políticos**: Actúan como filtros en la fase de **Discusión Parlamentaria**, subordinando la racionalidad económica a la supervivencia electoral.
+
+## 3. El Problema de la Coordinación e Interdependencia
+La política económica no es un silo único. En Ecuador existe un conflicto constante de coordinación:
+*   **Coordinación Vertical**: Tensiones entre el Gobierno Central y los **GADs** por el reparto de recursos (Modelo de Equidad Territorial).
+*   **Coordinación Horizontal**: Fricciones entre la política fiscal (Gasto del MEF) y la política monetaria/financiera (Liquidez del BCE), especialmente en dolarización donde el BCE tiene margen limitado.
+
+## 4. Tipología del Asesoramiento Económico
+Cuadrado Roura distingue entre el papel del economista según su rol:
+*   **Asesor Interno**: Técnicos de carrera en el MEF o SENPLADES (Saber pragmático).
+*   **Asesor Externo**: Académicos y think tanks que aportan visiones de largo plazo (Saber teórico), pero que suelen ser ignorados en emergencias fiscales.
+
+---
+
+# Conclusiones Generales
+El análisis exhaustivo del Capítulo 4 de Cuadrado Roura adaptado al Ecuador revela que la Política Económica es un proceso profundamente humano y político. La "Anatomía" no es solo una estructura de 6 fases y 3 ámbitos, sino una lucha constante contra los **retardos temporales**, la falta de **coordinación institucional** y la presión de **actores internacionales**. Comprender estos mecanismos es vital para cualquier economista que busque diseñar soluciones viables en el entorno de dolarización y fragilidad fiscal del país.
+
+# Referencias
+::: {#refs}
+:::
