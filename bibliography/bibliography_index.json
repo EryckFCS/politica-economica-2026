@@ -1,0 +1,43 @@
+{
+  "node": "economic_policy",
+  "collection": "politica_economica",
+  "generated": "2026-04-21",
+  "total_chunks": 2422,
+  "documents": [
+    {
+      "source_id": "cuadrado_roura_2014",
+      "title": "Política Económica: Elaboración, objetivos e instrumentos (4ª ed.)",
+      "authors": [
+        "Cuadrado Roura, Juan Ramón"
+      ],
+      "year": 2014,
+      "publisher": "McGraw-Hill",
+      "type": "libro",
+      "file": "bibliography/Cuadrado-RouraJR-LibroPol.Economica4a.ed.2014.pdf",
+      "chunks_indexed": 1822,
+      "chunks_legacy": 476,
+      "total_chunks": 2298,
+      "collection": "politica_economica",
+      "date_indexed": "2026-04-21",
+      "note": "Texto base de la materia. 476 chunks de ingesta previa sin source_id (duplicado de contenido).",
+      "status": "INDEXADO"
+    },
+    {
+      "source_id": "lectura_introductoria_pe",
+      "title": "Lectura Introductoria — Política Económica",
+      "authors": [
+        "Desconocido"
+      ],
+      "year": null,
+      "type": "lectura_docente",
+      "file": "bibliography/41304206_Lectura introductoria.pdf",
+      "chunks_indexed": 97,
+      "chunks_legacy": 27,
+      "total_chunks": 124,
+      "collection": "politica_economica",
+      "date_indexed": "2026-04-21",
+      "status": "INDEXADO"
+    }
+  ],
+  "pending": []
+}
