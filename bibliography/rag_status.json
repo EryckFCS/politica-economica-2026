@@ -1,0 +1,33 @@
+{
+  "collection": "politica_economica",
+  "total_chunks": 2422,
+  "last_audit": "2026-04-21",
+  "indexed_documents": [
+    {
+      "source_id": "cuadrado_roura_2014",
+      "source_name": "Cuadrado Roura — Política Económica 4a ed. (2014)",
+      "chunks": 1822
+    },
+    {
+      "source_id": "",
+      "source_name": "Cuadrado-RouraJR-LibroPol.Economica4a.ed.2014.pdf",
+      "chunks": 476
+    },
+    {
+      "source_id": "lectura_introductoria_pe",
+      "source_name": "Lectura Introductoria — Política Económica",
+      "chunks": 97
+    },
+    {
+      "source_id": "",
+      "source_name": "41304206_Lectura introductoria.pdf",
+      "chunks": 27
+    }
+  ],
+  "available_in_folder": [
+    "Cuadrado-RouraJR-LibroPol.Economica4a.ed.2014.pdf",
+    "41304206_Lectura introductoria.pdf"
+  ],
+  "pending_indexation": [],
+  "notes": "Duplicados por ingestas en dos pasadas (source_id vacio = ingesta antigua). Contenido es el mismo."
+}

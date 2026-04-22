@@ -12,9 +12,15 @@ htmlcov/
 # Virtual environments
 .venv
 
-# Quarto
+# Quarto — internals, cache, and output
 /.quarto/
 **/*.quarto_ipynb
+**/*_files/
+**/*_cache/
+_site/
+
+# Scratch — scripts operativos no versionables
+scratch/
 
 # Archives and Large Files
 *.zip
