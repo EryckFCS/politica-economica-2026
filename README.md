@@ -38,3 +38,10 @@ uv run python scratch/test_pe_rag.py
 ```
 
 La carpeta `docs/evidence/` concentra el material de entrega actual. `docs/README.md` es el índice canónico de lectura.
+
+## 📄 Arquitectura de Reporteo (Quarto)
+
+La redacción de informes y evidencia académica sigue el **Estándar Nivel 5**:
+- El archivo `_quarto.yml` reside en la **raíz del repositorio**.
+- Todo el output generado (HTML/PDF intermedios, dependencias JS/CSS) se excluye del control de versiones mediante reglas globales (`**/*_files/`).
+- La configuración garantiza un entorno limpio sin carpetas ad-hoc generadas por renderizado individual.
