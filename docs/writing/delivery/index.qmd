@@ -1,0 +1,24 @@
+---
+title: "Entrega canónica"
+subtitle: "Política Económica"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-23"
+bibliography: ../references.bib
+csl: ../apa.csl
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    pdf-engine: lualatex
+    toc: false
+    number-sections: true
+---
+
+# Entrega
+
+Desde esta página se enlaza la evidencia principal del nodo y la bóveda de escritura.
+
+- [Actividad AA](../../evidence/unit-01-policy-formulation/AA-01-Aplicacion-Marco-Conceptual/index.qmd)
+- [Unidad 01](../../evidence/unit-01-policy-formulation/index.qmd)
+- [Bóveda de escritura](../index.qmd)

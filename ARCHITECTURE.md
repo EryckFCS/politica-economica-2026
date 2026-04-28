@@ -1,36 +1,24 @@
 # Arquitectura - Política Económica 2026
 
-## Estado actual
+## Propósito
 
-Este repositorio funciona como nodo académico con soporte técnico mínimo. No existe un orquestador histórico tipo `M01-U1-LPE-Master_Build.py`; el flujo real hoy está en la documentación, la evidencia Quarto, el wrapper RAG y el script de sincronización bibliográfica.
+Este repositorio organiza la evidencia, la escritura canónica y la gestión documental del nodo de Política Económica.
 
 ## Capas de trabajo
 
-### Documentación académica
-
-- [docs/README.md](docs/README.md): índice canónico de lectura.
-- [docs/syllabus/](docs/syllabus/): marco doctrinal de la materia.
-- [docs/readings/](docs/readings/): lecturas y referencias.
-- [docs/evidence/U1-Elaboracion-Politica-Economica/AA-01-Aplicacion-Marco-Conceptual/index.qmd](docs/evidence/U1-Elaboracion-Politica-Economica/AA-01-Aplicacion-Marco-Conceptual/index.qmd): evidencia principal disponible.
-
-### Soporte técnico local
-
-- [main.py](main.py): resumen del estado del nodo.
-- [src/core/config.py](src/core/config.py): descubrimiento de raíz y carga opcional de parámetros.
-- [src/core/brain.py](src/core/brain.py): wrapper del cerebro central.
-
-### Mantenimiento del conocimiento
-
-- [bibliography/](bibliography/): PDFs locales para indexación.
-- [scripts/sync_brain.py](scripts/sync_brain.py): ingestión hacia la colección `politica_economica`.
-
-### Verificación
-
-- [tests/](tests/): suite formal de pytest.
-- [scratch/test_pe_rag.py](scratch/test_pe_rag.py): smoke manual no integrado a CI.
+- `docs/vaults/`: evidencia reproducible. Unidad activa: `u1-aa-01-policy-formulation/`.
+- `docs/writing/`: narrativa canónica y entregas.
+- `docs/management/`: planificación, arquitectura y riesgos.
+- `docs/readings/`: lecturas y bibliografía base.
+- `docs/syllabus/`: marco institucional y académico.
+- `main.py`: punto de entrada y resumen de estado.
+- `src/core/`: configuración y cerebro RAG.
+- `scripts/sync_brain.py`: sincronización bibliográfica.
+- `tests/`: gatekeeper de bóvedas y pruebas de estado.
+- `docs/writing/legacy/`: capa legacy de transición.
 
 ## Regla de uso
 
-1. Consultar [docs/README.md](docs/README.md) antes de escribir material nuevo.
-2. Mantener la evidencia activa en `docs/evidence/` y no inventar carpetas de unidad que no existan.
-3. Usar `tests/` para cobertura automática y dejar `scratch/` como verificación manual.
+1. No duplicar la narrativa fuera de `docs/writing/`.
+2. No mover la evidencia fuera de `docs/vaults/`.
+3. Mantener sincronizados los metadatos bibliográficos con la escritura canónica.

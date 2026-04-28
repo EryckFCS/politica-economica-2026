@@ -1,0 +1,24 @@
+---
+title: "Bóveda de Gestión"
+subtitle: "Planificación, arquitectura y riesgos"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-23"
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    pdf-engine: lualatex
+    toc: false
+    number-sections: true
+---
+
+# Propósito
+
+Esta bóveda organiza la planificación viva, la arquitectura documental y los riesgos del nodo.
+
+# Recursos
+
+- [Planificación](planning/index.qmd)
+- [Bóveda de escritura](../writing/index.qmd)
+- [Bóveda de evidencia](../evidence/README.md)

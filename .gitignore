@@ -30,3 +30,7 @@ scratch/
 
 # Specific Exclusions
 Photos*/
+_freeze/
+.ipynb_checkpoints/
+render_log*.txt
+.ruff_cache/

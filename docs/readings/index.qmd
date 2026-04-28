@@ -1,0 +1,24 @@
+---
+title: "Bóveda de Lecturas"
+subtitle: "Marco teórico y bibliografía de base"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-23"
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    pdf-engine: lualatex
+    toc: false
+    number-sections: true
+---
+
+# Propósito
+
+Esta bóveda centraliza las lecturas teóricas y el material de apoyo del nodo.
+
+# Recursos
+
+- [Fundamentos](unit-00-foundations/index.qmd)
+- [Sílabo institucional](../syllabus/index.qmd)
+- [Bóveda de escritura](../writing/index.qmd)

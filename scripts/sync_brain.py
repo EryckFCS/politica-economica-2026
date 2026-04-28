@@ -40,6 +40,19 @@ def build_chunk_metadata(book_path: Path, book_id: str) -> dict[str, str]:
     }
 
 
+def resolve_books_dir(project_root: Path) -> Path:
+    candidates = (
+        project_root / "docs/readings/unit-00-foundations/assets",
+        project_root / "bibliography",
+    )
+
+    for candidate in candidates:
+        if candidate.is_dir():
+            return candidate
+
+    return candidates[0]
+
+
 async def ingest_bibliography(
     project_root: Path = PROJECT_ROOT,
     collection_name: str = COLLECTION_NAME,
@@ -49,12 +62,12 @@ async def ingest_bibliography(
     print("🧠 Sincronizador de Conocimiento PE v7.4.0")
     print("=" * 60)
 
-    bibliography_dir = project_root / "bibliography"
-    books = discover_books(bibliography_dir)
+    books_dir = resolve_books_dir(project_root)
+    books = discover_books(books_dir)
     summary = {"books_found": len(books), "books_indexed": 0, "chunks_indexed": 0}
 
     if not books:
-        print("⚠️ No se encontraron libros en la carpeta 'bibliography/'.")
+        print(f"⚠️ No se encontraron libros en '{books_dir}'.")
         return summary
 
     print(f"📡 Libros detectados para indexación: {len(books)}")

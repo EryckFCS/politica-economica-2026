@@ -1,0 +1,20 @@
+---
+title: "Bóveda de Sílabo"
+subtitle: "Marco institucional y académico"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-23"
+format:
+  html:
+    toc: true
+  pdf:
+    pdf-engine: lualatex
+    toc: false
+---
+
+# Sílabo institucional
+
+El sílabo oficial del nodo se conserva como asset canónico en la bóveda institucional.
+
+- [Abrir PDF](institutional/assets/SYLLABUS.pdf)
+- [Índice institucional](institutional/index.qmd)
+- [Índice documental](../README.md)

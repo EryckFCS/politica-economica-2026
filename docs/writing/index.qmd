@@ -1,0 +1,26 @@
+---
+title: "Bóveda de Escritura"
+subtitle: "Narrativa canónica y entregas del nodo"
+author: "Erick Fabricio Condoy Seraquive"
+date: "2026-04-23"
+bibliography: references.bib
+csl: apa.csl
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    pdf-engine: lualatex
+    toc: false
+    number-sections: true
+---
+
+# Propósito
+
+Esta bóveda concentra la narrativa canónica del nodo y la bibliografía compartida para las entregas académicas.
+
+# Recursos
+
+- [Entrega canónica](delivery/index.qmd)
+- [Bibliografía](references.bib)
+- [Estilo APA](apa.csl)
