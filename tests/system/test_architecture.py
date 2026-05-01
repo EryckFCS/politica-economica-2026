@@ -9,11 +9,10 @@ def test_root_structure():
     required_dirs = [
         "bibliography/raw",
         "bibliography/processed",
-        "bibliography/markdown",
         "bibliography/sanitized",
         "config",
         "data",
-        "docs/vaults",
+        "docs/evidence",
         "docs/management",
         "docs/readings",
         "docs/syllabus",
@@ -32,14 +31,14 @@ def test_root_structure():
 
 
 def test_vault_naming_convention():
-    """Ensures vaults follow the [unit]-[cat]-[seq]-[slug] convention."""
-    vaults_path = REPO_ROOT / "docs" / "vaults"
-    if not vaults_path.exists():
-        pytest.skip("No vaults folder found.")
+    """Ensures evidence vaults follow the [unit]-[cat]-[seq]-[slug] convention."""
+    evidence_path = REPO_ROOT / "docs" / "evidence"
+    if not evidence_path.exists():
+        pytest.skip("No evidence folder found.")
         
     pattern = re.compile(r"^u\d-(aa|ape|acd)-\d{2}-[\w-]+$")
 
-    for item in vaults_path.iterdir():
+    for item in evidence_path.iterdir():
         if item.is_dir() and not item.name.startswith("."):
             assert item.name == item.name.lower(), f"Vault '{item.name}' must be lowercase."
             assert pattern.match(item.name), (
@@ -49,13 +48,13 @@ def test_vault_naming_convention():
 
 def test_vault_autonomy():
     """Validates that each research vault has the required internal structure."""
-    vaults_path = REPO_ROOT / "docs" / "vaults"
-    if not vaults_path.exists():
-        pytest.skip("No vaults folder found.")
+    evidence_path = REPO_ROOT / "docs" / "evidence"
+    if not evidence_path.exists():
+        pytest.skip("No evidence folder found.")
         
     required_internal = ["assets", "logs", "chapters", "index.qmd"]
 
-    for vault in vaults_path.iterdir():
+    for vault in evidence_path.iterdir():
         if vault.is_dir() and not vault.name.startswith("."):
             for req in required_internal:
                 assert (vault / req).exists(), (
@@ -75,9 +74,10 @@ def test_canonical_docs_v8():
     """Ensures core governance and management files exist."""
     required_files = [
         "AGENTS.md",
-        "ARCHITECTURE.md",
-        "ROADMAP.md",
+        "docs/management/ARCHITECTURE.md",
+        "docs/management/ROADMAP.md",
         "docs/management/status/RAG_REINDEXING_TICKET.md",
+        "docs/management/status/RAG_CURATED_BOOKS_CONSUMPTION.md",
         "bibliography/bibliography_index.json",
         "bibliography/rag_status.json"
     ]

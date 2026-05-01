@@ -13,7 +13,7 @@
 | **Teacher** | Econ. Maria Gabriela Moreno Hurtado |
 | **Central Library** | `ecs_quantitative` (capital-workstation-libs) |
 | **Intelligence Level** | 5 - Intelligent Ecosystem with Controlled Autonomy |
-| **Gatekeeper** | `tests/test_vault_architecture.py` |
+| **Gatekeeper** | `tests/system/test_architecture.py` |
 | **RAG** | `global_knowledge` (Federated Vector Store) |
 | **Bibliography Vault** | `docs/writing/` |
 
@@ -31,13 +31,13 @@ This node is an autonomous inference unit designed for:
 ### 3.1. Guardian Protocol
 
 - Invariant: every structural change must preserve the architecture gatekeeper and the data contracts.
-- Action: before closing any task, run `uv run pytest tests/test_vault_architecture.py tests/test_main.py`.
+- Action: before closing any task, run `uv run pytest tests/system/test_architecture.py`.
 - Failure: if the test fails, the repository is unstable and the root cause must be fixed before any further change.
 
 ### 3.2. Research Protocol
 
 - Detection: identify whether the task is Theory (Readings) or Application (Evidence).
-- Location: analytical work lives in `docs/vaults/`; narratives and deliveries live in `docs/writing/`; governance lives in `docs/management/`; readings live in `docs/readings/`; the official syllabus lives in `docs/syllabus/`.
+- Location: analytical work lives in `docs/evidence/`; narratives and deliveries live in `docs/writing/`; governance lives in `docs/management/`; readings live in `docs/readings/`; the official syllabus lives in `docs/syllabus/`.
 - Registration: every analysis must leave reproducible logs in its local `logs/` folder or in the corresponding evidence vault.
 
 ## 4. Vault Architecture (Atomic Level 5)
@@ -46,26 +46,25 @@ This node is an autonomous inference unit designed for:
 
 ```text
 .
-|-- docs/
-|   |-- vaults/              # Workshops, activities, and reports by unit (uX-[cat]-[seq]-slug)
-|   |-- writing/             # Canonical narrative and delivery layer
-|   |-- management/          # Planning, architecture, and risks
-|   |-- readings/            # Theoretical readings and references
-|   `-- syllabus/            # Institutional and academic syllabus
-|-- src/                     # Core logic, tasks, and orchestration
-|-- scripts/                 # Support scripts and maintenance helpers
-|-- tests/                   # Gatekeepers and regression checks
-`-- main.py                  # Entry point for the node
+├── docs/
+│   ├── evidence/            # Workshops, activities, and reports by unit (uX-[cat]-[seq]-slug)
+│   ├── writing/             # Canonical narrative and delivery layer
+│   ├── management/          # Planning, architecture, and risks
+│   ├── readings/            # Theoretical readings and references
+│   └── syllabus/            # Institutional and academic syllabus
+├── src/                     # Core logic, tasks, and orchestration
+├── scripts/                 # Support scripts and maintenance helpers
+└── tests/                   # Gatekeepers and regression checks
 ```
 
 ### 4.2. Documentary Structure
 
-- `docs/vaults/`: evidence vaults with `index.qmd` and supporting assets.
+- `docs/evidence/`: evidence vaults with `index.qmd` and supporting assets.
 - `docs/writing/`: canonical narrative, bibliography, and delivery layer.
 - `docs/management/`: planning, architecture, and risks.
 - `docs/readings/`: reading vault for foundational and thematic material.
 - `docs/syllabus/`: syllabus and institutional documents.
-- `docs/writing/legacy/`: legacy transition layer retained for compatibility.
+
 
 ## 5. Resilience Strategy
 
