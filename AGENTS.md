@@ -1,6 +1,6 @@
 # AGENTS.md - High-Fidelity Federated Node: Economic Policy
 
-> This repository is a Level 5 Pure Node in the Federated Architecture v8.0.0.
+> This repository is a Level 5 Pure Node in the Federated Architecture v8.1.5.
 > It operates under the Constitution centralized in:
 > `/home/erick-fcs/Capital_Workstation/capital-workstation-libs/.github/copilot-instructions.md`
 
@@ -9,7 +9,7 @@
 | Field | Value |
 | --- | --- |
 | **Node** | Economic Policy (7mo Ciclo) |
-| **Status** | Active - Federation v8.0.0 Intervention Phase |
+| **Status** | Active - Federation v8.1.5 Intervention Phase |
 | **Teacher** | Econ. Maria Gabriela Moreno Hurtado |
 | **Central Library** | `ecs_quantitative` (capital-workstation-libs) |
 | **Intelligence Level** | 5 - Intelligent Ecosystem with Controlled Autonomy |
@@ -48,7 +48,7 @@ This node is an autonomous inference unit designed for:
 .
 ├── docs/
 │   ├── vaults/            # Workshops, activities, and reports by unit (uX-[cat]-[seq]-slug)
-│   ├── writing/             # Canonical narrative and delivery layer
+│   │   ├── writing/             # Canonical narrative and delivery layer
 │   ├── management/          # Planning, architecture, and risks
 │   ├── readings/            # Theoretical readings and references
 │   └── syllabus/            # Institutional and academic syllabus
@@ -86,7 +86,7 @@ quarto render docs/vaults/u1-aa-01-policy-formulation/index.qmd --to pdf
 ## Golden Rule
 
 > If something built here is useful for other courses, propose it for the central library.
-# AGENTS.md Update: Centralized Lake Protocol (v8.1.0)
+# AGENTS.md Update: Centralized Lake Protocol (v8.1.5)
 
 Este repositorio utiliza el **Data Lake Centralizado** de Capital Workstation para gestionar archivos pesados (Datasets y Bibliografía).
 
@@ -104,9 +104,9 @@ uv run python -c "from src.core.config import settings; settings.resolve_resourc
 - **Acción**: Si necesitas un nuevo archivo pesado, regístralo en el Lake y añade el puntero en `config/resources.json`.
 
 ---
-*Actualización aplicada automáticamente durante la migración a Arquitectura v8.1.0.*
+*Actualización aplicada automáticamente durante la migración a Arquitectura v8.1.5.*
 
-## Architecture v8.1.4 (Final Validation)
+## Architecture v8.1.5 (Final Validation)
 - Status: ✅ Synchronized and Lake-Linked.
 - Date: 2026-05-01
 - Operation: Massive Data Lake Centralization and RAG intelligence decoupling.
