@@ -5,7 +5,7 @@ El nodo organiza la documentación académica, la evidencia reproducible y el ac
 ## Arquitectura documental
 
 - [Índice documental](docs/README.md)
-- [Bóveda de evidencia](docs/evidence/README.md)
+- [Bóveda de evidencia](docs/vaults/README.md)
 - [Bóveda de escritura](docs/writing/index.qmd)
 - [Bóveda de gestión](docs/management/index.qmd)
 - [Bóveda de lecturas](docs/readings/index.qmd)
