@@ -12,17 +12,17 @@ import main as main_module
 def test_build_status_reports_config_and_brain_state(tmp_path):
     config_path = tmp_path / "config" / "params.yaml"
     config_path.parent.mkdir(parents=True)
-    config_path.write_text("collection: politica_economica\n", encoding="utf-8")
+    config_path.write_text("collection: economic_policy\n", encoding="utf-8")
 
     config = type("Config", (), {"root_path": tmp_path, "config_path": config_path})()
-    brain = type("Brain", (), {"collection": "politica_economica", "memory": object()})()
+    brain = type("Brain", (), {"collection": "economic_policy", "memory": object()})()
 
     status = main_module.build_status(config=config, brain=brain)
 
     assert status["project_root"] == str(tmp_path)
     assert status["config_path"] == str(config_path)
     assert status["config_exists"] is True
-    assert status["rag_collection"] == "politica_economica"
+    assert status["rag_collection"] == "economic_policy"
     assert status["rag_available"] is True
 
 
@@ -55,6 +55,7 @@ def test_build_status_uses_local_defaults(monkeypatch, tmp_path):
     assert status["project_root"] == str(tmp_path)
     assert status["config_exists"] is False
     assert status["rag_available"] is False
+    assert status["rag_collection"] == "economic_policy"
 
 
 def test_main_prints_summary(capsys, monkeypatch):
@@ -65,7 +66,7 @@ def test_main_prints_summary(capsys, monkeypatch):
             "project_root": "/tmp/economic_policy",
             "config_path": "/tmp/economic_policy/config/params.yaml",
             "config_exists": False,
-            "rag_collection": "politica_economica",
+            "rag_collection": "economic_policy",
             "rag_available": True,
         },
     )
@@ -86,6 +87,7 @@ def test_main_entrypoint_exits_cleanly(monkeypatch, tmp_path):
         {
             "root_path": tmp_path,
             "config_path": tmp_path / "config" / "params.yaml",
+            "rag_collection": "economic_policy",
         },
     )()
 
@@ -94,7 +96,7 @@ def test_main_entrypoint_exits_cleanly(monkeypatch, tmp_path):
         "Brain",
         (),
         {
-            "collection": "politica_economica",
+            "collection": "economic_policy",
             "memory": object(),
         },
     )()

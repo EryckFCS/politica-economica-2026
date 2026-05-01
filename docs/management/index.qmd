@@ -21,4 +21,4 @@ Esta bóveda organiza la planificación viva, la arquitectura documental y los r
 
 - [Planificación](planning/index.qmd)
 - [Bóveda de escritura](../writing/index.qmd)
-- [Bóveda de evidencia](../evidence/README.md)
+- [Bóveda de evidencia](../vaults/u1-aa-01-policy-formulation/index.qmd)

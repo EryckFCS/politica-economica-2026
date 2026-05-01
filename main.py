@@ -10,11 +10,13 @@ def build_status(config: Any | None = None, brain: Any | None = None) -> dict[st
     if brain is None:
         from src.core.brain import brain as brain
 
+    rag_collection = getattr(config, "rag_collection", "economic_policy")
+
     return {
         "project_root": str(config.root_path),
         "config_path": str(config.config_path),
         "config_exists": config.config_path.exists(),
-        "rag_collection": getattr(brain, "collection", "politica_economica"),
+        "rag_collection": rag_collection,
         "rag_available": getattr(brain, "memory", None) is not None,
     }
 

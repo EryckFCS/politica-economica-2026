@@ -76,7 +76,9 @@ def test_clear_previous_entries_ignores_collection_errors():
 
 @pytest.mark.asyncio
 async def test_ingest_bibliography_returns_empty_summary_when_no_books(tmp_path):
-    summary = await sync_brain.ingest_bibliography(project_root=tmp_path, memory=FakeMemory(), processor=FakeProcessor(""))
+    summary = await sync_brain.ingest_bibliography(
+        project_root=tmp_path, memory=FakeMemory(), processor=FakeProcessor("")
+    )
 
     assert summary == {"books_found": 0, "books_indexed": 0, "chunks_indexed": 0}
 
@@ -92,7 +94,8 @@ async def test_ingest_bibliography_indexes_chunks_and_clears_previous_entries(tm
     text = (
         "Instrumento fiscal orientado a la estabilización macroeconómica. " * 3
         + "\n\n"
-        + "La política monetaria coordinada con la fiscalidad incide sobre el empleo y el exterior. " * 3
+        + "La política monetaria coordinada con la fiscalidad incide sobre el empleo y el exterior. "
+        * 3
         + "\n\n"
         + "corto"
     )
@@ -120,6 +123,7 @@ async def test_ingest_bibliography_indexes_chunks_and_clears_previous_entries(tm
     assert first_call["metadata"]["project"] == "economic_policy"
     assert first_call["metadata"]["source_name"] == pdf_path.name
     assert first_call["metadata"]["book_id"] == book_id
+    assert sync_brain.COLLECTION_NAME == "economic_policy"
 
 
 def test_sync_brain_main_returns_zero_without_real_io(monkeypatch):

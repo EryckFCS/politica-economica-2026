@@ -5,7 +5,7 @@ El nodo organiza la documentación académica, la evidencia reproducible y el ac
 ## Arquitectura documental
 
 - [Índice documental](docs/README.md)
-- [Bóveda de evidencia](docs/vaults/README.md)
+- [Bóveda de evidencia](docs/vaults/u1-aa-01-policy-formulation/index.qmd)
 - [Bóveda de escritura](docs/writing/index.qmd)
 - [Bóveda de gestión](docs/management/index.qmd)
 - [Bóveda de lecturas](docs/readings/index.qmd)
@@ -16,7 +16,7 @@ El nodo organiza la documentación académica, la evidencia reproducible y el ac
 - [main.py](main.py): resumen del estado del nodo.
 - [src/core/config.py](src/core/config.py): descubrimiento de raíz y carga opcional de `config/params.yaml`.
 - [src/core/brain.py](src/core/brain.py): wrapper sobre `ecs_quantitative.memory.agent_memory.AgentMemory`.
-- [scripts/sync_brain.py](scripts/sync_brain.py): ingestión de PDFs desde `docs/readings/unit-00-foundations/assets/` hacia la colección `politica_economica`.
+- [scripts/sync_brain.py](scripts/sync_brain.py): ingestión de PDFs desde `docs/readings/unit-00-foundations/assets/` hacia la colección `economic_policy`.
 
 ## Mantenimiento y validación
 

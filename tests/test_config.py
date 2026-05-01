@@ -11,7 +11,9 @@ def test_peconfig_discovers_root_and_config_path(tmp_path, monkeypatch):
     project_root = tmp_path / "economic_policy"
     nested_dir = project_root / "docs" / "evidence"
     nested_dir.mkdir(parents=True)
-    (project_root / "pyproject.toml").write_text("[project]\nname = 'politica-economica'\n", encoding="utf-8")
+    (project_root / "pyproject.toml").write_text(
+        "[project]\nname = 'politica-economica'\n", encoding="utf-8"
+    )
 
     monkeypatch.chdir(nested_dir)
     _reset_peconfig()
@@ -27,12 +29,14 @@ def test_peconfig_discovers_root_and_config_path(tmp_path, monkeypatch):
 def test_peconfig_reload_reads_yaml_when_present(tmp_path, monkeypatch):
     project_root = tmp_path / "economic_policy"
     project_root.mkdir()
-    (project_root / "pyproject.toml").write_text("[project]\nname = 'politica-economica'\n", encoding="utf-8")
+    (project_root / "pyproject.toml").write_text(
+        "[project]\nname = 'politica-economica'\n", encoding="utf-8"
+    )
 
     config_dir = project_root / "config"
     config_dir.mkdir()
     (config_dir / "params.yaml").write_text(
-        "collection: politica_economica\nrefresh:\n  enabled: true\n",
+        "collection: economic_policy\nrefresh:\n  enabled: true\n",
         encoding="utf-8",
     )
 
@@ -41,7 +45,7 @@ def test_peconfig_reload_reads_yaml_when_present(tmp_path, monkeypatch):
 
     config = PEConfig()
 
-    assert config.params == {"collection": "politica_economica", "refresh": {"enabled": True}}
+    assert config.params == {"collection": "economic_policy", "refresh": {"enabled": True}}
     assert config.reload() == config.params
     assert config.has_config is True
 
@@ -49,7 +53,9 @@ def test_peconfig_reload_reads_yaml_when_present(tmp_path, monkeypatch):
 def test_peconfig_ignores_reinitialization(tmp_path, monkeypatch):
     project_root = tmp_path / "economic_policy"
     project_root.mkdir()
-    (project_root / "pyproject.toml").write_text("[project]\nname = 'politica-economica'\n", encoding="utf-8")
+    (project_root / "pyproject.toml").write_text(
+        "[project]\nname = 'politica-economica'\n", encoding="utf-8"
+    )
 
     monkeypatch.chdir(project_root)
     _reset_peconfig()
@@ -65,7 +71,9 @@ def test_peconfig_ignores_reinitialization(tmp_path, monkeypatch):
 def test_peconfig_returns_empty_params_for_non_mapping_yaml(tmp_path, monkeypatch):
     project_root = tmp_path / "economic_policy"
     project_root.mkdir()
-    (project_root / "pyproject.toml").write_text("[project]\nname = 'politica-economica'\n", encoding="utf-8")
+    (project_root / "pyproject.toml").write_text(
+        "[project]\nname = 'politica-economica'\n", encoding="utf-8"
+    )
 
     config_dir = project_root / "config"
     config_dir.mkdir()
@@ -82,7 +90,9 @@ def test_peconfig_returns_empty_params_for_non_mapping_yaml(tmp_path, monkeypatc
 def test_peconfig_recovers_from_invalid_yaml(tmp_path, monkeypatch):
     project_root = tmp_path / "economic_policy"
     project_root.mkdir()
-    (project_root / "pyproject.toml").write_text("[project]\nname = 'politica-economica'\n", encoding="utf-8")
+    (project_root / "pyproject.toml").write_text(
+        "[project]\nname = 'politica-economica'\n", encoding="utf-8"
+    )
 
     config_dir = project_root / "config"
     config_dir.mkdir()

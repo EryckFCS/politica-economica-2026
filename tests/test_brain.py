@@ -27,7 +27,7 @@ def test_pebrain_uses_injected_memory():
 
     assert results == [{"content": "respuesta", "metadata": {"source_name": "demo"}}]
     assert fake_memory.calls == [
-        {"query": "política fiscal", "n_results": 3, "collection": "politica_economica"}
+        {"query": "política fiscal", "n_results": 3, "collection": "economic_policy"}
     ]
     assert brain.is_available is True
     assert brain.connection_error is None

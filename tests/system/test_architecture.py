@@ -4,6 +4,7 @@ import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+
 def test_root_structure():
     """Validates that the root directory follows Blueprint v8.0.0."""
     required_dirs = [
@@ -35,7 +36,7 @@ def test_vault_naming_convention():
     vaults_path = REPO_ROOT / "docs" / "vaults"
     if not vaults_path.exists():
         pytest.skip("No evidence folder found.")
-        
+
     pattern = re.compile(r"^u\d-(aa|ape|acd)-\d{2}-[\w-]+$")
 
     for item in vaults_path.iterdir():
@@ -51,7 +52,7 @@ def test_vault_autonomy():
     vaults_path = REPO_ROOT / "docs" / "vaults"
     if not vaults_path.exists():
         pytest.skip("No evidence folder found.")
-        
+
     required_internal = ["assets", "logs", "chapters", "index.qmd"]
 
     for vault in vaults_path.iterdir():
@@ -65,11 +66,12 @@ def test_vault_autonomy():
 def test_zero_floating_root():
     """Ensures no unauthorized research files are floating in the root."""
     prohibited_extensions = [".ipynb", ".csv", ".xlsx", ".pdf", ".do"]
-    
+
     for item in REPO_ROOT.iterdir():
         if item.is_file() and item.suffix in prohibited_extensions:
             pytest.fail(f"Floating file detected in root: {item.name}. Move it to a vault.")
-            
+
+
 def test_canonical_docs_v8():
     """Ensures core governance and management files exist."""
     required_files = [
@@ -79,7 +81,7 @@ def test_canonical_docs_v8():
         "docs/management/status/RAG_REINDEXING_TICKET.md",
         "docs/management/status/RAG_CURATED_BOOKS_CONSUMPTION.md",
         "bibliography/bibliography_index.json",
-        "bibliography/rag_status.json"
+        "bibliography/rag_status.json",
     ]
     for f in required_files:
         assert (REPO_ROOT / f).is_file(), f"Missing required governance file: {f}"

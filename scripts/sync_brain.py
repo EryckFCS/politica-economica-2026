@@ -6,10 +6,11 @@ from typing import Any
 
 from ecs_quantitative.ingestion.processors.pdf import PDFProcessor
 from ecs_quantitative.memory.agent_memory import AgentMemory
+from src.core.config import settings
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-COLLECTION_NAME = "politica_economica"
+COLLECTION_NAME = settings.rag_collection
 MIN_CHUNK_LENGTH = 100
 
 
@@ -35,7 +36,7 @@ def build_chunk_metadata(book_path: Path, book_id: str) -> dict[str, str]:
     return {
         "source_name": book_path.name,
         "book_id": book_id,
-        "project": "economic_policy",
+        "project": COLLECTION_NAME,
         "type": "theoretical_framework",
     }
 
