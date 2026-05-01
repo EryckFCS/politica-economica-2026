@@ -1,0 +1,25 @@
+{
+  "datasets": [],
+  "bibliography": [
+    {
+      "id": "cuadrado-roura-economic-policy-2014",
+      "filename": "cuadrado-roura-economic-policy-2014.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/cuadrado-roura-economic-policy-2014.pdf"
+    },
+    {
+      "id": "introductory-reading-economic-policy",
+      "filename": "introductory-reading-economic-policy.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/introductory-reading-economic-policy.pdf"
+    },
+    {
+      "id": "cuadrado-roura-economic-policy-2013-edited",
+      "filename": "cuadrado-roura-economic-policy-2013-edited.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/cuadrado-roura-economic-policy-2013-edited.pdf"
+    },
+    {
+      "id": "cuadrado-roura-economic-policy-2013",
+      "filename": "cuadrado-roura-economic-policy-2013.pdf",
+      "lake_path": "/home/erick-fcs/.capital/lake/bibliography/raw/cuadrado-roura-economic-policy-2013.pdf"
+    }
+  ]
+}

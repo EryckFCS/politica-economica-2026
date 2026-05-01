@@ -86,3 +86,28 @@ quarto render docs/vaults/u1-aa-01-policy-formulation/index.qmd --to pdf
 ## Golden Rule
 
 > If something built here is useful for other courses, propose it for the central library.
+# AGENTS.md Update: Centralized Lake Protocol (v8.1.0)
+
+Este repositorio utiliza el **Data Lake Centralizado** de Capital Workstation para gestionar archivos pesados (Datasets y Bibliografía).
+
+## 1. Protocolo de Recursos
+- **Ubicación Física**: Los archivos reales residen en `~/.capital/lake/`.
+- **Punteros Locales**: El archivo `config/resources.json` define qué recursos requiere este nodo.
+- **Resolución**: Al inicializar el entorno o clonar por primera vez, se debe ejecutar la resolución de recursos para crear los enlaces simbólicos (Symlinks).
+
+```bash
+uv run python -c "from src.core.config import settings; settings.resolve_resources()"
+```
+
+## 2. Invariante de Git
+- **Prohibido**: No se deben subir archivos `.xlsx`, `.dta`, `.pdf` o `.csv` pesados al repositorio.
+- **Acción**: Si necesitas un nuevo archivo pesado, regístralo en el Lake y añade el puntero en `config/resources.json`.
+
+---
+*Actualización aplicada automáticamente durante la migración a Arquitectura v8.1.0.*
+
+## Architecture v8.1.4 (Final Validation)
+- Status: ✅ Synchronized and Lake-Linked.
+- Date: 2026-05-01
+- Operation: Massive Data Lake Centralization and RAG intelligence decoupling.
+
