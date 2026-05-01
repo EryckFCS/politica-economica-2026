@@ -47,7 +47,7 @@ This node is an autonomous inference unit designed for:
 ```text
 .
 ├── docs/
-│   ├── evidence/            # Workshops, activities, and reports by unit (uX-[cat]-[seq]-slug)
+│   ├── vaults/            # Workshops, activities, and reports by unit (uX-[cat]-[seq]-slug)
 │   ├── writing/             # Canonical narrative and delivery layer
 │   ├── management/          # Planning, architecture, and risks
 │   ├── readings/            # Theoretical readings and references
