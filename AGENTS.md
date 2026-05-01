@@ -37,8 +37,8 @@ This node is an autonomous inference unit designed for:
 ### 3.2. Research Protocol
 
 - Detection: identify whether the task is Theory (Readings) or Application (Evidence).
-- Location: analytical work lives in `docs/evidence/`; narratives and deliveries live in `docs/writing/`; governance lives in `docs/management/`; readings live in `docs/readings/`; the official syllabus lives in `docs/syllabus/`.
-- Registration: every analysis must leave reproducible logs in its local `logs/` folder or in the corresponding evidence vault.
+- Location: analytical work lives in `docs/vaults/`; narratives and deliveries live in `docs/writing/`; governance lives in `docs/management/`; readings live in `docs/readings/`; the official syllabus lives in `docs/syllabus/`.
+- Registration: every analysis must leave reproducible logs in its local `logs/` folder or in the corresponding vault.
 
 ## 4. Vault Architecture (Atomic Level 5)
 
@@ -59,7 +59,7 @@ This node is an autonomous inference unit designed for:
 
 ### 4.2. Documentary Structure
 
-- `docs/evidence/`: evidence vaults with `index.qmd` and supporting assets.
+- `docs/vaults/`: vaults with `index.qmd` and supporting assets.
 - `docs/writing/`: canonical narrative, bibliography, and delivery layer.
 - `docs/management/`: planning, architecture, and risks.
 - `docs/readings/`: reading vault for foundational and thematic material.
@@ -68,7 +68,7 @@ This node is an autonomous inference unit designed for:
 
 ## 5. Resilience Strategy
 
-1. Zero Floating Doctrine: no analytical scripts should float in the root; operational logic stays in `src/` or the evidence vaults.
+1. Zero Floating Doctrine: no analytical scripts should float in the root; operational logic stays in `src/` or the vaults.
 2. Path Integrity: resolve paths with `pathlib` and project configuration, not hardcoded routes.
 3. Data Lineage: curation and normalization must preserve traceability in logs and catalog files.
 4. Quarto Hygiene: writing outputs must not mix with core logic or raw data.
