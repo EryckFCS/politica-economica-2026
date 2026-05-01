@@ -3,7 +3,7 @@
 ## Estado actual
 
 - [x] Índice documental centralizado en [docs/README.md](docs/README.md).
-- [x] Evidencia U1 disponible en [docs/evidence/unit-01-policy-formulation/AA-01-Aplicacion-Marco-Conceptual/index.qmd](docs/evidence/unit-01-policy-formulation/AA-01-Aplicacion-Marco-Conceptual/index.qmd).
+- [x] Evidencia U1 disponible en [docs/vaults/unit-01-policy-formulation/AA-01-Aplicacion-Marco-Conceptual/index.qmd](docs/vaults/unit-01-policy-formulation/AA-01-Aplicacion-Marco-Conceptual/index.qmd).
 - [x] Punto de entrada técnico mínimo en [main.py](main.py).
 - [x] Ingestión bibliográfica centralizada en [scripts/sync_brain.py](scripts/sync_brain.py) desde [docs/readings/unit-00-foundations/assets/](docs/readings/unit-00-foundations/assets/).
 - [x] Suite formal de pytest con cobertura automática de configuración, brain y sincronización.

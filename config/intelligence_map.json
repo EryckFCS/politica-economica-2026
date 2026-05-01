@@ -1,0 +1,10 @@
+{
+  "node": "Economic Policy",
+  "version": "8.0.0",
+  "last_sync": "2026-05-01",
+  "sources": {
+    "bibliography": "bibliography/raw/",
+    "vaults": "docs/vaults/"
+  },
+  "mappings": []
+}
