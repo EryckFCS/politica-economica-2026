@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from ecs_quantitative.ingestion.processors.pdf import PDFProcessor
-from ecs_quantitative.memory.agent_memory import AgentMemory
+from ecs_quantitative.core.memory import AgentMemory
 from src.core.config import settings
 
 
