@@ -1,0 +1,8 @@
+assignment: "Tarea Práctico-Experimental: Diseño de una política para mejorar el empleo adecuado en Ecuador"
+professor: "Econ. Maria Gabriela Moreno Hurtado"
+submission_date: "21 de mayo de 2026"
+format:
+  pdf:
+    header-includes: |
+      \newcommand{\logoUNL}{/home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/assets/logos/logo_unl.png}
+      \newcommand{\logoECONOMIA}{/home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/assets/logos/logo_economia.jpg}
