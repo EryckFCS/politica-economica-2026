@@ -1,0 +1,85 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$]{article}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Custom Premium Researcher Typography: Linux Libertine (automatically includes Biolinum)
+\usepackage{libertine}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{setspace} % Load setspace package for spacing environments
+
+$header-includes$
+
+% Curated Academic Palette (Prussian Blue, Burgundy, Soft Charcoal)
+\definecolor{primary}{HTML}{0A2540}    % Deep Prussian Blue
+\definecolor{secondary}{HTML}{8D2B32}  % Sophisticated Deep Burgundy
+\definecolor{darkgray}{HTML}{22252A}   % Rich Slate/Charcoal for body text
+
+% Apply dark gray color to body text
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\AtBeginDocument{\globalcolor{darkgray}}
+
+% Section heading styles
+\titleformat{\section}
+  {\color{primary}\normalfont\Large\bfseries\sffamily}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\color{secondary}\normalfont\large\bfseries\sffamily}
+  {\thesubsection}{1em}{}
+
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+
+% Caption styling
+\DeclareCaptionFont{primarycolor}{\color{primary}}
+\captionsetup[table]{name=Tabla, format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,primarycolor,normalsize}, textfont={it,normalsize}}
+\captionsetup[figure]{name=Figura, format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,primarycolor,normalsize}, textfont={it,normalsize}}
+
+% Header & Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{secondary}PROPUESTA DE POLÍTICA PÚBLICA}
+\fancyhead[R]{\sffamily\small\color{secondary}EMPLEO ADECUADO Y FORMALIZACIÓN}
+\fancyfoot[L]{\sffamily\small\color{gray}Erick Condoy Seraquive | Propuesta de Política Pública}
+\fancyfoot[R]{\sffamily\small\color{gray}\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{secondary}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+% Pull-quote environment
+\newenvironment{pullquote}{%
+  \vspace{10pt}
+  \begin{center}
+  \begin{minipage}{0.88\textwidth}
+  \color{secondary} % Use Burgundy for highlights like pullquotes
+  \hrule height 1pt
+  \vspace{6pt}
+  \centering\itshape\large
+}{%
+  \vspace{6pt}
+  \hrule height 1pt
+  \end{minipage}
+  \end{center}
+  \vspace{10pt}
+}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+$body$
+\end{document}
