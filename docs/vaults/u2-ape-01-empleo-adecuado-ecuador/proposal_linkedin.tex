@@ -52,7 +52,7 @@
 \floatname{codelisting}{Listing}\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}\makeatother\makeatletter\makeatother\makeatletter\@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}\makeatother
 
-% Curated Academic Palette (Prussian Blue, Burgundy, Soft Charcoal)
+% Curated Academic Palette (Prussian Blue, Burgundy, Soft Charcoal by default, customizable via YAML)
 \definecolor{primary}{HTML}{0A2540}    % Deep Prussian Blue
 \definecolor{secondary}{HTML}{8D2B32}  % Sophisticated Deep Burgundy
 \definecolor{darkgray}{HTML}{22252A}   % Rich Slate/Charcoal for body text
@@ -81,12 +81,12 @@
 \captionsetup[table]{name=Tabla, format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,primarycolor,normalsize}, textfont={it,normalsize}}
 \captionsetup[figure]{name=Figura, format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,primarycolor,normalsize}, textfont={it,normalsize}}
 
-% Header & Footer
+% Header & Footer (Parameterizable via YAML)
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\sffamily\small\color{secondary}PROPUESTA DE POLÍTICA PÚBLICA}
-\fancyhead[R]{\sffamily\small\color{secondary}EMPLEO ADECUADO Y FORMALIZACIÓN}
-\fancyfoot[L]{\sffamily\small\color{gray}Erick Condoy Seraquive | Propuesta de Política Pública}
+\fancyhead[L]{\sffamily\small\color{secondary}INVESTIGACIÓN ACADÉMICA}
+\fancyhead[R]{\sffamily\small\color{secondary}ANÁLISIS ECONÓMICO}
+\fancyfoot[L]{\sffamily\small\color{gray}Erick Condoy Seraquive}
 \fancyfoot[R]{\sffamily\small\color{gray}\thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\headrule}{\hbox to\headwidth{\color{secondary}\leaders\hrule height \headrulewidth\hfill}}
