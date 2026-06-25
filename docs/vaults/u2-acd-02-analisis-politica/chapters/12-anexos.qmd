@@ -1,0 +1,36 @@
+# Anexos {.unnumbered}
+
+## Anexo A. Diccionario de variables
+
+**Tabla 7**  
+*Diccionario de variables analizadas*  
+
+|Variable|Definición operacional|Fuente|Frecuencia|
+|:---|:-----------------------------------|:---|:---|
+|Tasa de empleo adecuado|% de la PEA que trabaja $\ge$ 40 h/semana con ingresos $\ge$ SBU|ENEMDU-INEC|Mensual / Anual|
+|Tasa de informalidad|% de ocupados en establecimientos < 100 trab. sin RUC|ENEMDU-INEC|Mensual|
+|Tasa de desempleo|% de la PEA sin empleo y en búsqueda activa|ENEMDU-INEC|Mensual / Anual|
+|Recaudación SRI (USD M)|Total de tributos administrados por el SRI|SRI|Mensual / Anual|
+|IED (USD M)|Inversión Extranjera Directa neta registrada por el BCE|BCE|Trimestral / Anual|
+|PIB real (%)|Variación porcentual del PIB en volumen (base 2018=100)|BCE - CNT|Trimestral / Anual|
+|SBU|Salario Básico Unificado: USD 450 (2023) / USD 460 (2024)|Ministerio del Trabajo|Anual|
+|PEA|Población Económicamente Activa ($\ge$ 15 años)|ENEMDU-INEC|Continua|
+
+*Nota.* Elaboración propia.
+
+## Anexo B. Artículos clave de la LEEGE referenciados en el informe
+
+**Tabla 8**  
+*Artículos clave de la LEEGE referenciados*  
+
+|Artículo|Contenido relevante|
+|:---|:-------------------|
+|Art. 1 (Objeto)|Impulso inmediato del empleo, incremento de recaudación tributaria e incentivo a la inversión.|
+|Art. 6, num. 9.2|Deducción adicional del 50% sobre sueldos de nuevas plazas para jóvenes 18-29 años; 75% si son egresados de instituciones públicas.|
+|Art. 6, num. 9.3|Deducción adicional del 75% por nuevas plazas para ex privados de libertad con sentencia > 1 año.|
+|Art. 34 (Zonas Francas)|Definición y régimen especial aduanero, tributario y financiero de las Zonas Francas.|
+|Art. 35 (Objetivos ZF)|Las Zonas Francas promueven generación de empleo, atracción de inversión y competitividad nacional.|
+|Art. 50.3 (Régimen tributario ZF)|0% de IR por 5 años; luego 15% fijo. Exoneración de IVA, ISD y tributos al comercio exterior.|
+|Disp. Transitoria Primera|Remisión del 100% de intereses, multas y recargos por obligaciones hasta dic. 2023, con pago hasta jul. 2024.|
+
+*Nota.* Elaboración propia.

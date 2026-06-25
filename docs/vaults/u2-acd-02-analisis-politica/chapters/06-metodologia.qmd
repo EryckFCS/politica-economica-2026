@@ -1,0 +1,9 @@
+# Estrategia Metodológica de Evaluación
+
+Se adopta una estrategia descriptiva-comparativa de tipo antes/después (pre-post), basada en la comparación de indicadores laborales y fiscales entre el año previo a la ley (2023) y el primer año completo de vigencia (2024). Esta elección metodológica es la más adecuada dado que:
+
+a) La política se aplicó de manera universal a todo el territorio nacional, lo que impide construir un grupo de control geográfico o sectorial.
+b) Los datos disponibles no permiten identificar el número exacto de plazas creadas mediante las deducciones adicionales (no existe publicación administrativa del SRI con ese desagregado).
+c) El periodo de vigencia es de un año, insuficiente para aplicar métodos de series de tiempo con adecuada potencia estadística.
+
+El análisis descriptivo examina tendencias, tasas de variación y comparaciones antes/después de los indicadores seleccionados. Se reconoce explícitamente que este diseño no permite inferir causalidad: los cambios observados en 2024 son el resultado conjunto de múltiples factores (ley, recesión, crisis energética, inseguridad), sin que sea posible aislar el efecto atribuible exclusivamente a los incentivos laborales de la LEEGE. La evaluación se limita a establecer asociaciones y contrastar la hipótesis de mejora laboral con la evidencia disponible.

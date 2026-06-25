@@ -1,0 +1,148 @@
+---
+format:
+  pdf:
+    pdf-engine: lualatex
+    template: my_template.tex
+    toc: false
+    number-sections: true
+    colorlinks: true
+    fontsize: 10pt
+    geometry:
+      - margin=2.54cm
+    header-includes:
+      - |
+        \usepackage{setspace}
+        \setstretch{1.15}
+        \usepackage{indentfirst}
+        \setlength{\parindent}{1.27cm}
+        \setlength{\parskip}{0pt}
+        \usepackage{booktabs}
+        \usepackage{longtable}
+        \usepackage{float}
+        \usepackage{array}
+        \usepackage{caption}
+        \captionsetup[table]{name=Tabla, format=plain, labelsep=newline, justification=raggedright, singlelinecheck=false, labelfont={bf,normalsize}, textfont={it,normalsize}}
+        \usepackage{url}
+        \usepackage{hyperref}
+        \usepackage{titlesec}
+        \titlespacing*{\section}{0pt}{8pt}{6pt}
+        \titlespacing*{\subsection}{0pt}{6pt}{4pt}
+  html:
+    toc: true
+    theme: cosmo
+---
+
+\begin{center}
+\textbf{UNIVERSIDAD NACIONAL DE LOJA} \\
+Facultad Jurídica, Social y Administrativa \\
+Carrera de Economía \\
+\textbf{Asignatura:} Política Económica \\
+\textbf{Unidad 2:} Aprendizaje en Contacto con el Docente (ACD 01) \\
+\vspace{1em}
+\end{center}
+
+\noindent \textbf{Tema:} Evaluación de Políticas de Estabilidad de Precios en Ecuador \\
+\noindent \textbf{Autor:} Erick Fabricio Condoy Seraquive \\
+\noindent \textbf{Fecha:} 5 de junio de 2026
+\vspace{1.5em}
+
+## Recursos de la Actividad
+
+- Documento base del taller: [taller_estabilidad_precios_ecuador.docx](assets/taller_estabilidad_precios_ecuador.docx)
+- Resolución del taller en PDF: [index.pdf](assets/index.pdf)
+
+---
+
+# Diagnóstico del problema de precios en Ecuador
+
+Al estar dolarizado, Ecuador no tiene moneda propia ni puede imprimir dinero. Tampoco puede fijar las tasas de interés a su antojo ni devaluar para abaratar sus productos frente al exterior. Por lo tanto, cuando ocurren problemas económicos, la única forma de adaptarse es mejorando la productividad, abaratando los costos internos de producción y permitiendo que los precios se ajusten de manera natural en los mercados.
+
+A **abril de 2026**, la inflación anual en el país fue de **2,60\%**, con un incremento mensual de **0,53\%** y una inflación acumulada en el año de **1,23\%** (INEC, 2026). Estos números muestran que la inflación está controlada, pero existen alzas en sectores específicos debido a aumentos en los costos de producción y medidas fiscales:
+1.  **Aumento del IVA al 15\%:** La subida del IVA en abril de 2024 encareció los servicios de transporte y logística, y sus efectos se siguen sintiendo en los costos de producción de 2025 y 2026.
+2.  **Menos subsidios a las gasolinas:** El recorte gradual del subsidio a las gasolinas *Extra* y *Ecopaís* subió el costo de los fletes de carga y pasajes de transporte terrestre.
+3.  **Apagones y crisis eléctrica:** Los cortes de luz obligaron a las industrias a encender sus propios generadores a diésel, lo cual es mucho más caro que la electricidad normal de la red y eleva el costo de fabricar y conservar alimentos.
+4.  **Clima inestable:** Sequías y lluvias afectaron las cosechas de alimentos de manera temporal, aunque en abril de 2026 la categoría de *Alimentos y bebidas no alcohólicas* bajó un **-0,04\%** mensual.
+
+## El IPC y los Sectores Afectados
+
+El Índice de Precios al Consumidor (IPC) del INEC mide **359 productos** agrupados en **12 divisiones de consumo**. La categoría de *Alimentos y bebidas no alcohólicas* es la más importante porque representa el 22,45\% del gasto de las familias y es la más afectada por el clima.
+
+El problema de precios en Ecuador no es generalizado, sino que está concentrado en dos áreas: **Transporte (División 7)** y **Vivienda y Servicios Básicos (División 4)**. Las alzas de la gasolina y el costo de la energía eléctrica explican esta concentración. Como el precio de los alimentos bajó un **-0,04\%** mensual en abril, se confirma que la inflación no se debe a que la gente esté gastando demasiado dinero, sino al aumento directo de los costos de energía y transporte.
+
+## IPC General frente a la Inflación Subyacente
+
+Para tomar buenas decisiones de política económica, se debe entender la diferencia entre dos indicadores:
+
+*   **IPC General:** Mide el cambio de precio de todos los productos de la canasta, incluidos los combustibles y alimentos frescos. Sin embargo, estos últimos cambian de precio muy rápido por el clima o el precio del petróleo. Si el gobierno se guía solo por el IPC General, podría pensar que hay inflación permanente cuando en realidad es un problema temporal (como una sequía), y tomar decisiones equivocadas como recortar el presupuesto público.
+*   **Inflación Subyacente e IPC por Componentes:** La inflación subyacente elimina los precios más inestables (alimentos frescos y combustibles) para ver la tendencia real y permanente de los precios. El análisis por componentes permite ver qué sector específico está subiendo de precio. En Ecuador, estos indicadores demuestran que el problema está en los costos de energía y transporte, lo que permite aplicar soluciones directas en esos sectores en lugar de frenar toda la economía.
+
+# Identificación del tipo de inflación
+
+\begin{singlespace}
+\begin{small}
+\begin{longtable}{p{4.2cm} p{2.0cm} p{4.0cm} p{4.8cm}}
+\caption{Matriz de identificación del tipo de inflación en Ecuador} \label{tbl:matriz_tipo} \\
+\toprule
+\textbf{Tipo de inflación} & \textbf{¿Está presente?} & \textbf{Evidencia usada} & \textbf{Explicación sencilla} \\ \midrule
+\textbf{Inflación de demanda} & No & Desempleo y ventas estancadas en los comercios. & La gente no está gastando en exceso. La falta de dinero en circulación frena la demanda. \\ \addlinespace
+\textbf{Inflación de costos u oferta} & \textbf{Sí} & IVA al 15\%, gasolina más cara y costos de luz por apagones. & Producir y transportar bienes cuesta más debido al alza de energía y combustibles. \\ \addlinespace
+\textbf{Inflación importada} & Parcialmente & Precios de maquinaria e insumos agrícolas del exterior. & Ecuador compra herramientas y fertilizantes caros a otros países y eso sube los precios internos. \\ \addlinespace
+\textbf{Inflación por expectativas} & No & Las metas de precios de las empresas siguen estables. & El uso del dólar da confianza y evita que la gente suba precios por miedo a que la moneda pierda valor. \\ \addlinespace
+\textbf{Inflación sectorial o microestructural} & \textbf{Sí} & Rigidez en mercados locales frente al precio del productor. & Existen demasiados intermediarios entre el campo y la ciudad, lo que encarece los alimentos y las medicinas. \\ \bottomrule
+\end{longtable}
+\end{small}
+\end{singlespace}
+
+La **inflación en Ecuador es de costos y de intermediación (microestructural)**. Como el país está dolarizado, no hay inflación por exceso de dinero circulando. Las alzas de precios ocurren porque producir y transportar los productos es más caro (gasolina, generadores eléctricos por apagones) y porque los canales de distribución locales cobran márgenes de ganancia excesivos.
+
+# Evaluación de políticas de estabilidad de precios
+
+\begin{singlespace}
+\begin{small}
+\begin{longtable}{p{3.5cm} p{2.2cm} p{3.1cm} p{3.1cm} p{3.1cm}}
+\caption{Matriz de evaluación de políticas de precios en Ecuador} \label{tbl:matriz_politicas} \\
+\toprule
+\textbf{Política evaluada} & \textbf{Tipo de inflación} & \textbf{Ventaja principal} & \textbf{Riesgo o costo} & \textbf{¿Es adecuada y aplicable?} \\ \midrule
+\textbf{Política 1: Incentivos fiscales a la autogeneración privada (Ley de Competatividad Energética, 2024).} & Costos (crisis de luz). & Las empresas reducen su costo de luz al deducir el 100\% de su inversión en paneles solares y generadores del Impuesto a la Renta. & Reducción inicial de recaudación del Impuesto a la Renta para el Estado. & \textbf{Sí.} Es adecuada y ya se aplica. Mitiga la paralización de fábricas y el encarecimiento de alimentos por apagones. \\ \addlinespace
+\textbf{Política 2: Esquema de bandas con compensación directa a transportistas (Decreto Ejecutivo 308, 2024).} & Costos (gasolina). & Evita que el retiro del subsidio generalizado a la gasolina suba el precio de los pasajes de transporte y fletes de carga liviana. & Requiere cruce de bases de datos para evitar desvíos del bono de compensación. & \textbf{Sí, recomendada.} Ya está vigente en Ecuador. Protege el costo de la canasta básica subsidiando al transportista formal, no al combustible. \\ \addlinespace
+\textbf{Política 3: Circuitos Alternativos del MAG y centros de acopio asociativos.} & Intermediación (distribución). & Conecta al agricultor directo con las ciudades mediante ferias ("De la Mata a la Olla") y centros de acopio provinciales. & Requiere financiamiento constante del MAG y BanEcuador. & \textbf{Sí.} Ya se ejecuta a nivel nacional. Ayuda a combatir la especulación en los precios de verduras y frutas. \\ \bottomrule
+\end{longtable}
+\end{small}
+\end{singlespace}
+
+## Evidencia Empírica de Éxito en Otros Países
+
+*   **Compensación al Transporte y Crédito Fiscal (Chile):** El Servicio de Impuestos Internos (SII) de Chile aplica la devolución del impuesto específico al diésel y el crédito fiscal de IVA al transporte de carga por carreteras. Esta medida ha amortiguado los shocks de combustibles en la transportación productiva de alimentos, logrando que un aumento del 20\% en el precio internacional del diésel solo se traduzca en una variación menor al 2\% en las tarifas de los fletes finales agrícolas.
+*   **Desintermediación mediante Centros de Acopio (Colombia):** El modelo de cooperativas de acopio directo en Boyacá y Cundinamarca redujo el spread (margen) de intermediación de un promedio del 200\% a un 55\%. Esto elevó el ingreso neto del productor rural un 28\% y abarató los alimentos sensibles de la canasta básica (papas, legumbres) un 15\% promedio en los mercados mayoristas de Bogotá.
+*   **Monitoreo y Competencia en Dolarización (Panamá):** La *Autoridad de Protección al Consumidor y Defensa de la Competencia (ACODECO)* de Panamá vigila de forma estricta los márgenes de ganancia en la distribución de bienes básicos y sanciona la colusión de mayoristas. Este esquema de control de competencia e importaciones baratas ha mantenido la inflación de Panamá históricamente bajo el 1,5\% anual.
+
+## Decisiones de Política
+*   **Política recomendada:** *Esquema de compensación a transportistas (Política 2)* combinada con *Circuitos de comercialización directa del MAG (Política 3)*. Estas medidas ya operan en el país y deben fortalecerse para evitar que la eliminación de subsidios de combustibles y los intermediarios mayoristas inflen los precios de la comida en las áreas urbanas.
+*   **Política descartada:** *Subsidios generales a la gasolina.* Es fiscalmente inviable en Ecuador. Revertir la medida de 2024 deterioraría la liquidez del Presupuesto del Estado y pondría en riesgo la dolarización.
+
+# Conclusión técnica
+
+Para proteger la dolarización y mantener los precios bajos, Ecuador debe enfocarse en reducir los **costos de energía y transporte** y acortar la **cadena de intermediarios**. 
+
+## Acciones Clave
+1.  **Monitoreo del subsidio de compensación (SRI / ANT):** Depuración y control continuo de las transferencias mensuales a transportistas por el Decreto 308 para asegurar que cubra la tarifa logística de alimentos básicos.
+2.  **Red de centros de acopio directos (MAG / BanEcuador):** Cofinanciamiento de bodegas y cuartos fríos para cooperativas agrícolas del país, fortaleciendo el programa CIALCO.
+3.  **Facilidades a la autogeneración limpia (Ley de Competitividad Energética):** Agilizar la aprobación y deducibilidad de impuestos para la adopción de paneles solares y generadores eficientes por parte del sector industrial.
+
+## Metas Cuantitativas y Sustento Económico
+*   **Meta de alimentos:** Reducir la inflación de la división *Alimentos y Bebidas* a un rango de **entre 0,2\% y 0,5\% anual** en un plazo de **12 meses**.
+    *   *Sustento*: Los intermediarios comerciales representan entre el 80\% y el 150\% del precio final de las legumbres y tubérculos. Reducir esta brecha de comercialización a la mitad mediante los centros de acopio directos y ferias CIALCO reduce el precio al consumidor de estos productos sensibles en un 12\% a 15\% en promedio, lo que genera un impacto de descenso directo de 2,5 puntos en la variación de la división de alimentos.
+*   **Meta de transporte:** Estabilizar la inflación del componente de *Transporte* al **1,5\% anual** en un plazo de **18 meses**.
+    *   *Sustento*: El combustible representa el 32\% del costo operativo de un camión de carga pesada. La compensación económica directa a transportistas mitiga el alza de gasolinas de fletes menores, y se propone complementarla con la devolución automática del IVA de peajes y repuestos para transporte pesado, lo que genera un ahorro neto de 4,8\% en el costo operativo de fletes, absorbiendo los choques de combustibles de carga terrestre.
+
+## Indicador para Evaluar si la Política Funcionó
+
+Para validar si las intervenciones arancelarias, de compensación de combustibles y de intermediación cumplieron su cometido, es metodológicamente incorrecto examinar únicamente el IPC General. Dicho indicador distorsiona la lectura por la incidencia de choques exógenos climáticos o externos. 
+
+El criterio de evaluación técnico exige utilizar el **IPC por Componentes / Desagregado**. Esto permite auditar de forma aislada las subvariaciones de la división de *Alimentos y bebidas no alcohólicas* y el rubro logístico de *Vivienda/Combustibles*, que constituyen los focos de presión detectados.
+
+La reducción de precios se considerará exitosa si satisface tres condicionantes de bienestar paralelos:
+*   **Descenso real en la variación anual del componente de alimentos agrícolas básicos.**
+*   **Preservación del empleo productivo y el margen de ganancia de los pequeños productores.**
+*   **Recuperación del poder adquisitivo en el consumo básico de los hogares más vulnerables.**
+

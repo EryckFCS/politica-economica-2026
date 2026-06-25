@@ -1,0 +1,15 @@
+# Conclusiones y Recomendaciones
+
+## Conclusiones
+
+La evaluación de la LEEGE revela una dicotomía crítica entre los objetivos fiscales y laborales del Estado. Mientras que la normativa logró una consolidación fiscal inmediata mediante mecanismos agresivos de recaudación como la autorretención y la remisión, este éxito financiero no se tradujo en una dinamización del mercado de trabajo. La brecha observada sugiere que los incentivos tributarios, por sí solos, resultan inoperantes cuando el entorno macroeconómico está marcado por la recesión y la inseguridad. La política pública, por tanto, ha priorizado la liquidez fiscal sobre la estabilidad social del empleo pleno, exacerbando la precariedad laboral e informalidad.
+
+En términos de implicaciones, la dependencia de ingresos no recurrentes para sostener el presupuesto estatal compromete la sostenibilidad fiscal a largo plazo. La erosión del empleo adecuado indica que la reducción del costo impositivo del trabajo es insuficiente para compensar los altos costos operativos y el riesgo país que enfrentan las empresas. Para rectificar este rumbo, se requiere una transición desde una política recaudatoria reactiva hacia una estrategia integral de fomento productivo que aborde las barreras estructurales de la inversión y la productividad.
+
+## Recomendaciones
+
+Se presentan las siguientes recomendaciones estratégicas:
+
+1) **Reforma de incentivos:** Reorientar las deducciones adicionales exclusivamente hacia las microempresas y PYMES, asegurando que el beneficio esté condicionado a la formalización verificable de trabajadores previamente informales.
+2) **Transparencia y monitoreo:** Implementar un sistema de reporte trimestral por parte del SRI que detalle el uso de beneficios tributarios y su correlación directa con la creación neta de puestos de trabajo por sector.
+3) **Protección social proactiva:** Evaluar la sustitución de deducciones por subsidios directos a la seguridad social en sectores de baja productividad, mitigando el riesgo de informalidad estructural.

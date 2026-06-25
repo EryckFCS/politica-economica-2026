@@ -1,0 +1,17 @@
+# Evaluación de Sostenibilidad
+
+**Tabla 6**  
+*Evaluación de sostenibilidad de la política económica*  
+
+|Dimensión|Evaluación|Clasificación|
+|:---|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---:|
+|Económica|El deterioro del mercado laboral en 2024 (empleo adecuado -0,4 pp, informalidad +2,3 pp) sugiere que los beneficios esperados no se materializaron. La caída del PIB al 0,9% en 2024 contextualizó adversamente la política.|Baja|
+|Fiscal|La remisión tributaria (USD 562 M) es no recurrente. El crecimiento de la recaudación depende de medidas extraordinarias que se agotan en 2024. La deducción adicional por plazas nuevas reduce el IR recurrente.|Baja-media|
+|Social|La informalidad alcanzó el 58% —máximo histórico reciente— y la pobreza subió del 26% al 28%. Los beneficios laborales no llegaron a los grupos más vulnerables (microempresas, trabajadores informales).|Baja|
+|Institucional|El CEPAI, el SRI y el Ministerio del Trabajo cuentan con capacidades para administrar la norma. El régimen de Zonas Francas requiere infraestructura institucional aún en construcción.|Media|
+|Ambiental|La ley excluye actividades extractivas y contaminantes de las Zonas Francas (Art. 50, LEEGE, 2023). No hay efectos ambientales directos negativos identificados en el primer año.|Media-alta|
+|Política|La ley fue sancionada bajo la figura de urgencia económica, limitando el debate legislativo. Esto genera riesgo de cuestionamiento político-judicial posterior.|Media-baja|
+
+*Nota.* Elaboración propia con base en LEEGE (2023); INEC (2024); SRI (2025); BCE (2024).
+
+En conclusión, la política se clasifica como efectiva en su componente fiscal de corto plazo, aunque esta efectividad es parcial y se sustenta en ingresos de carácter no recurrente. No obstante, la política resulta ineficaz en su objetivo laboral primordial. La sostenibilidad general se considera baja en las dimensiones económica, fiscal y social, lo que sitúa a esta normativa en la categoría de política efectiva únicamente en el corto plazo y carente de sostenibilidad en los términos evaluados.

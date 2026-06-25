@@ -1,0 +1,46 @@
+---
+title: "Evaluación de efectividad y sostenibilidad de una política económica: Ley Orgánica de Eficiencia Económica y Generación de Empleo"
+subtitle: "Política evaluada: Incentivos a la generación de empleo y formalización laboral"
+author:
+  - "Luis Romero"
+  - "Luis Abad"
+  - "Dayana Francelina Bustamante Benitez"
+  - "Erick Fabricio Condoy Seraquive"
+date: "2026-06-22"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=30mm
+      - left=25mm
+      - right=25mm
+      - bottom=30mm
+---
+
+{{< include chapters/00-resumen.qmd >}}
+
+{{< include chapters/01-introduccion.qmd >}}
+
+{{< include chapters/02-descripcion.qmd >}}
+
+{{< include chapters/03-marco-conceptual.qmd >}}
+
+{{< include chapters/04-datos.qmd >}}
+
+{{< include chapters/05-estadistica-descriptiva.qmd >}}
+
+{{< include chapters/06-metodologia.qmd >}}
+
+{{< include chapters/07-modelo-empirico.qmd >}}
+
+{{< include chapters/08-resultados.qmd >}}
+
+{{< include chapters/09-sostenibilidad.qmd >}}
+
+{{< include chapters/10-conclusiones.qmd >}}
+
+{{< include chapters/11-referencias.qmd >}}
+
+{{< include chapters/12-anexos.qmd >}}

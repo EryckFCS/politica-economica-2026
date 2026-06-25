@@ -1,0 +1,19 @@
+# Datos e Indicadores
+
+Los datos utilizados en esta evaluación provienen exclusivamente de fuentes oficiales. La principal fuente de información laboral es la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU), producida mensual y anualmente por el Instituto Nacional de Estadística y Censos (INEC). Para los indicadores fiscales y macroeconómicos se utilizan los boletines del Banco Central del Ecuador (BCE) y los reportes de recaudación del Servicio de Rentas Internas (SRI). El texto legal de referencia es la LEEGE publicada en el Registro Oficial Suplemento N.° 461.
+
+**Tabla 2**  
+*Indicadores de evaluación de la política*  
+
+|Indicador|Definición|Fuente|Periodo|Relación con la política|
+|:-------|:------------------|:-------|:-----|:------------------|
+|Tasa de empleo adecuado|% de la PEA con trabajo de al menos 40h/semana e ingresos $\ge$ SBU|ENEMDU-INEC (anual)|2021-2024|Resultado directo esperado de la política|
+|Tasa de informalidad|% de ocupados sin RUC en establecimientos <100 trabajadores|ENEMDU-INEC|2023-2024|Resultado directo; la ley busca reducirla|
+|Tasa de desempleo|% de la PEA sin trabajo y en búsqueda activa|ENEMDU-INEC (anual)|2021-2024|Indicador de contexto laboral|
+|Recaudación tributaria total|Total recaudado por el SRI (USD millones)|SRI Boletín 2024|2023-2024|Efectividad del componente fiscal de la ley|
+|Recaudación IR|Impuesto a la Renta recaudado (USD millones)|SRI|2023-2024|Mide si la deducción redujo el IR neto|
+|Remisión tributaria|Monto recaudado por remisión de intereses y multas|SRI, 2024|2024|Ingreso extraordinario no recurrente|
+|IED (USD millones)|Inversión Extranjera Directa neta|BCE|2023-2024|Sostenibilidad: ¿la ley atrajo inversión?|
+|PIB real (variación %)|Crecimiento anual del PIB en volumen|BCE, Cuentas Nacionales|2023-2024|Contexto macroeconómico general|
+
+*Nota.* SBU = Salario Básico Unificado. PEA = Población Económicamente Activa. Elaboración propia.

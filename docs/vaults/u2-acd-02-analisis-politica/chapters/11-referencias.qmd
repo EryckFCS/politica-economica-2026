@@ -1,0 +1,52 @@
+# Referencias {.unnumbered}
+
+\begingroup
+\setlength{\parindent}{-1.27cm}
+\setlength{\leftskip}{1.27cm}
+\setlength{\parskip}{6pt}
+
+Angrist, J. D., & Pischke, J. S. (2009). *Mostly harmless econometrics: An empiricist's companion*. Princeton University Press.
+
+Asamblea Nacional del Ecuador. (2023). Ley Orgánica de Eficiencia Económica y Generación de Empleo. *Registro Oficial Suplemento N.° 461*. https://www.lexis.com.ec
+
+Banco Central del Ecuador. (2024a). *Informe de resultados cuentas nacionales trimestrales: Primer trimestre 2024*. https://contenido.bce.fin.ec/documentos/informacioneconomica/cuentasnacionales/trimestrales/Informe_CNTITrim2024.pdf
+
+Banco Central del Ecuador. (2024b). *Estadísticas del sector real: Crecimiento anual del PIB*. https://contenido.bce.fin.ec/documentos/informacioneconomica/SectorReal/ix_SectorRealPrin.html
+
+Banco Central del Ecuador. (2025). *La economía ecuatoriana creció 3,4% en el primer trimestre de 2025*. https://www.bce.fin.ec/la-economia-ecuatoriana-crecio-34-en-el-primer-trimestre-de-2025/
+
+Banco Mundial. (2022). *Ecuador: Diagnóstico sistemático de país*. Grupo del Banco Mundial.
+
+Bloomberg Línea. (2025, 26 de enero). El empleo adecuado en Ecuador cae y la informalidad alcanza récord. https://www.bloomberglinea.com/latinoamerica/ecuador/el-empleo-adecuado-en-ecuador-cae-y-la-informalidad-alcanza-record/
+
+CISS Bienestar. (2024, 13 de noviembre). Más del 50% de trabajadores tiene un empleo informal en Ecuador. https://ciss-bienestar.org/2024/11/14/mas-del-50-de-trabajadores-tiene-un-informal-en-ecuador/
+
+El Comercio. (2024, 23 de diciembre). Empleo adecuado se reduce en Ecuador: Mire las últimas cifras del 2024. https://www.elcomercio.com/actualidad/negocios/empleo-adecuado-se-reduce-en-ecuador-mire-las-ultimas-cifras-del-2024/
+
+Expreso. (2025, 27 de enero). La recesión de 2024 se tradujo en más pobreza e informalidad. https://www.expreso.ec/actualidad/economia/recesion-2024-tradujo-pobreza-e-informalidad-229431.html
+
+Instituto Nacional de Estadística y Censos. (2024). *Encuesta Nacional de Empleo, Desempleo y Subempleo: ENEMDU anual 2024*. https://www.ecuadorencifras.gob.ec/documentos/web-inec/EMPLEO/2024/anual/Boletin_tecnico_anual_enero-diciembre_2024.pdf
+
+La Hora. (2025, 21 de abril). La mitad de los ecuatorianos con empleo cerraron 2024 con ingresos de USD 354,6 al mes o menos. https://www.lahora.com.ec/archivo/La-mitad-de-los-ecuatorianos-con-empleo-cerraron-2024-con-ingresos-de-3546-al-mes-o-menos-2025
+
+Levy, S. (2008). *Good intentions, bad outcomes: Social policy, informality, and economic growth in Mexico*. Brookings Institution Press.
+
+Lexis Ecuador. (2025, 6 de enero). Inversión extranjera directa en Ecuador cae más del 50% en el tercer trimestre de 2024. https://www.lexis.com.ec/noticias/inversion-extranjera-directa-en-ecuador-cae-mas-del-50-en-el-tercer-trimestre-de-2024
+
+Musgrave, R. A. (1959). *The theory of public finance: A study in public economy*. McGraw-Hill.
+
+Primicias. (2024a, 25 de agosto). Remisión tributaria dejó USD 562 millones en recaudación de impuestos. https://www.primicias.ec/economia/remision-tributaria-dejo-usd-562-millones-recaudacion-impuestos-77245/
+
+Primicias. (2024b, 21 de abril). Menos trabajo pleno y más desempleo: Las cifras laborales de marzo de 2024. https://www.primicias.ec/noticias/economia/empleo-desempleo-ecuador-trabajo-inec-referendum-informalidad/
+
+Primicias. (2025, 6 de abril). La inversión extranjera de 2024 en Ecuador fue la más baja en 14 años. https://www.primicias.ec/economia/inversion-extranjera-ecuador-china-estados-unidos-93425/
+
+Primicias. (2024c, 26 de diciembre). Estas son las cifras de empleo con las que Ecuador cierra el 2024. https://www.primicias.ec/economia/cifras-empleo-ecuador-desempleo-trabajo-2024-inec-86360/
+
+Saez, E., Schoefer, B., & Seim, D. (2019). Payroll taxes, firm behavior, and rent sharing: Evidence from a young workers' tax cut in Sweden. *American Economic Review*, *109*(5), 1717–1763. https://doi.org/10.1257/aer.20171937
+
+Servicio de Rentas Internas. (2025). *Boletín N.° NAC-COM-25-003: Las ventas crecieron 2,2% e impulsaron la recaudación tributaria del año 2024*. SRI. https://www.sri.gob.ec
+
+Tinbergen, J. (1952). *On the theory of economic policy*. North-Holland Publishing.
+
+\endgroup

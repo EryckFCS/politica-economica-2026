@@ -1,0 +1,38 @@
+# Estadística Descriptiva
+
+## Mercado laboral: tendencia 2021-2024
+
+La Tabla 3 presenta la evolución de los principales indicadores laborales en Ecuador, según la ENEMDU anual del INEC. La tasa de empleo adecuado mostró una recuperación sostenida desde 2021 (32,5%) hasta 2023 (36,3%), impulsada por la normalización post-pandémica. Sin embargo, en 2024 —primer año completo de vigencia de la LEEGE— la tasa cayó ligeramente a 35,9%, revirtiéndose la tendencia de mejora (INEC, 2024).
+
+**Tabla 3**  
+*Evolución de indicadores laborales en Ecuador (2021-2024)*  
+
+|Indicador (% PEA)|2021|2022|2023|2024|Variación 2023-2024|
+|:------------------|:---:|:---:|:---:|:---:|:---:|
+|Tasa de empleo adecuado|32,5|34,4|36,3|35,9|-0,4 pp|
+|Tasa de subempleo|23,2|22,2|19,6|21,0|+1,4 pp|
+|Tasa de desempleo|5,2|4,4|3,8|3,7|-0,1 pp|
+|Tasa de informalidad (dic.)|n.d.|n.d.|55,7|58,0|+2,3 pp|
+
+*Nota.* pp = puntos porcentuales. n.d. = no disponible con desagregación comparable. Fuente: INEC, ENEMDU anual (2024). Elaboración propia.
+
+La reducción del empleo adecuado en 2024 se produjo a pesar de la entrada en vigor de la ley en enero de dicho año. Resulta particularmente crítico que la informalidad alcanzara el 58% en diciembre de 2024, lo cual representa el nivel más alto registrado desde 2007 (INEC, 2024; La Hora, 2025). Esta tendencia sugiere que los incentivos tributarios de la LEEGE resultaron insuficientes para contrarrestar factores estructurales y coyunturales adversos, tales como la recesión económica, la crisis energética, la inseguridad y el incremento del Impuesto al Valor Agregado (IVA) al 15% dispuesto en la misma normativa.
+
+## Indicadores fiscales: recaudación tributaria 2023-2024
+
+En contraste con los resultados del componente laboral, el desempeño fiscal derivado de la aplicación de la ley fue significativamente positivo. La recaudación total del SRI ascendió a USD 20.131 millones en 2024, lo que supone un incremento del 15,6% respecto a los USD 17.420 millones recaudados en 2023 (SRI, 2025). Este crecimiento se explica fundamentalmente por tres fuentes extraordinarias: en primer lugar, la remisión tributaria, que generó un aporte de USD 562 millones provenientes de contribuyentes en mora; en segundo lugar, las autorretenciones de los 520 grandes contribuyentes, mecanismo establecido por la LEEGE; y, finalmente, las contribuciones temporales aplicadas al sistema financiero (SRI, 2025; Primicias, 2024).
+
+**Tabla 4**  
+*Comparativa de indicadores fiscales y de inversión (2023-2024)*  
+
+|Concepto|2023 (USD mill.)|2024 (USD mill.)|Variación (%)|
+|:-------------------|:---:|:---:|:---:|
+|Recaudación tributaria total|17.420|20.131|+15,6%|
+|Impuesto a la Renta (IR)|n.d.|6.639|n.d.|
+|IVA|n.d.|9.767|n.d.|
+|Remisión tributaria (extraordinario)|—|562|—|
+|IED (flujo anual)|≈ 530*|232|-56,2%|
+
+*Nota.* *Estimación BCE. IED = Inversión Extranjera Directa. Fuente: SRI (2025); BCE (2024); Primicias (2025). Elaboración propia.
+
+La Inversión Extranjera Directa (IED), indicador fundamental para medir la capacidad de la normativa en la atracción de capitales productivos, sufrió una contracción severa al situarse en USD 232 millones en 2024, cifra que representa el nivel más bajo en catorce años (Primicias, 2025). Este hecho evidencia que el marco normativo favorable instaurado por la LEEGE no fue suficiente para mitigar el impacto de un entorno adverso caracterizado por la inseguridad, crisis eléctricas prolongadas y una contracción del Producto Interno Bruto (PIB) estimada en el 0,9% para el ejercicio fiscal 2024 (BCE, 2024b).

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "capital-workstation-libs",
+			"path": "../../../../../Capital_Workstation/capital-workstation-libs"
+		},
+		{
+			"name": "economic_policy",
+			"path": "."
+		},
+		{
+			"path": "../thesis_project/double-informality-determinants-ecuador"
+		}
+	],
+	"settings": {
+		"python.languageServer": "Pylance",
+		"quarto.path": "/usr/local/bin/quarto"
+	}
+}

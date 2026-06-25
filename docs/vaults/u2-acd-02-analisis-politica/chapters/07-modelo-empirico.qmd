@@ -1,0 +1,9 @@
+# Estrategia Empírica y Justificación Metodológica
+
+No se aplica un modelo econométrico formal. La justificación es la siguiente: dado que la LEEGE fue implementada simultáneamente en todo el territorio nacional y no existe un grupo no tratado, no es posible construir un estimador de diferencias en diferencias (DiD) válido. La ausencia de datos administrativos publicados sobre el número de contribuyentes que efectivamente accedieron a la deducción adicional por nuevas plazas (numerales 9.2 y 9.3, Art. 6 de la LEEGE) impide cuantificar el tratamiento. Un modelo de Mínimos Cuadrados Ordinarios (MCO) de corte transversal o de series de tiempo con un año de observación post-intervención carecería de potencia estadística y produciría estimaciones sesgadas e ininterpretables.
+
+En este contexto, la evaluación descriptiva comparativa, bien justificada y con indicadores pertinentes, es más sólida epistemológicamente que un modelo econométrico mal identificado. Como señala Angrist y Pischke (2009), la credibilidad de una evaluación depende de la calidad del diseño de identificación, no de la sofisticación del modelo. El análisis se concentra en tres preguntas evaluativas operacionales:
+
+1) ¿Cambió la tasa de empleo adecuado en la dirección esperada?
+2) ¿Se redujo la informalidad?
+3) ¿Fueron los resultados fiscales atribuibles a los mecanismos de la ley?

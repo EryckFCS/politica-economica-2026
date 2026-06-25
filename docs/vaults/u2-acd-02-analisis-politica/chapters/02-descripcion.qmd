@@ -1,0 +1,28 @@
+# Descripción de la Política Evaluada y Lógica de Intervención
+
+## Caracterización de la política
+
+La LEEGE fue aprobada por la Asamblea Nacional el 19 de diciembre de 2023, sancionada por el Ejecutivo ese mismo día y publicada en el Registro Oficial Suplemento N.° 461 el 20 de diciembre de 2023. Es una Ley Orgánica de urgencia económica —modalidad constitucional que impone plazos acelerados de tratamiento legislativo (Art. 137 de la Constitución)— y se encuentra en vigencia con última modificación al 11 de enero de 2024 (Asamblea Nacional del Ecuador, 2023).
+
+La institución responsable de su implementación es el Servicio de Rentas Internas (SRI) en el componente tributario, el Comité Estratégico de Promoción y Atracción de Inversiones (CEPAI) en Zonas Francas, y el Ministerio del Trabajo en el registro de nuevos contratos. El objetivo explícito declarado en el Art. 1 de la ley es: "el impulso inmediato del empleo, el incremento de la recaudación tributaria y el incentivo de la inversión" (LEEGE, Art. 1, 2023). La población objetivo son los empleadores (personas naturales y sociedades) del sector formal que generen nuevas plazas de trabajo con aporte al IESS.
+
+Los instrumentos centrales para la generación de empleo son: (a) deducción adicional del 50% sobre sueldos y salarios de nuevas plazas para jóvenes de 18-29 años y personas con obligaciones alimenticias; (b) deducción del 75% si los nuevos empleados son jóvenes graduados de universidades o institutos públicos; (c) deducción del 75% para nuevas plazas en los sectores de construcción y agricultura; y (d) deducción del 75% para empleadores que contraten a ex privados de libertad con sentencia superior a un año (LEEGE, Art. 6, numerales 9.2 y 9.3, 2023). Adicionalmente, la ley crea el régimen de Zonas Francas con 0% de IR por cinco años, exoneración de IVA e ISD, y un periodo de remisión tributaria del 100% de intereses, multas y recargos para obligaciones generadas hasta el 31 de diciembre de 2023 (LEEGE, Disposición Transitoria Primera, 2023).
+
+## Lógica de intervención de la política
+
+Para evaluar la cadena de impacto de los incentivos, se sistematiza la lógica de intervención de la LEEGE en la Tabla 1:
+
+**Tabla 1**  
+*Matriz de Lógica de Intervención de la LEEGE*  
+
+|Elemento|Contenido|
+|:------|:---------------------------------------------------|
+|**Problema inicial**|Alta informalidad laboral (~55,7% al cierre de 2023) y baja tasa de empleo adecuado (36,3%).|
+|**Instrumento de política**|Deducciones adicionales del IR (50% y 75%) por nuevas plazas de trabajo registradas en el Ministerio del Trabajo con aporte al IESS.|
+|**Canal de transmisión**|La reducción del costo tributario neto del trabajo formal incentiva a los empleadores a formalizar relaciones laborales o crear nuevas plazas en el sector formal.|
+|**Resultado esperado**|Aumento de la tasa de empleo adecuado, reducción de la informalidad y ampliación de la base de afiliados al IESS.|
+|**Indicador de evaluación**|Tasa de empleo adecuado (ENEMDU-INEC), tasa de informalidad y número de nuevos afiliados al IESS.|
+|**Supuesto clave**|Los empleadores del sector formal son sensibles al costo tributario del trabajo y ampliarán la nómina formal ante reducciones de ese costo.|
+|**Riesgo o efecto no deseado**|La deducción solo aplica a contribuyentes del régimen general de IR, excluyendo a las microempresas que concentran la mayor parte del empleo informal; el incentivo puede financiar rotación de personal en lugar de empleo neto nuevo.|
+
+*Nota.* Elaboración propia con base en LEEGE (2023) y datos ENEMDU-INEC (2023).
