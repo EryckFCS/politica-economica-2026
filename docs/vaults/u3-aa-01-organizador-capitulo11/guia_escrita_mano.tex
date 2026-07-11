@@ -1,0 +1,399 @@
+% --- INSTITUTIONAL TEMPLATE FED v7.4.9 ---
+% Estándar de Reporteo APA 7 (Babel-Free)
+\documentclass[12pt,spanish]{article}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{indentfirst} 
+\usepackage{caption}
+\usepackage{floatrow} 
+
+% Forzar estilos de caption antes de cualquier carga
+\floatsetup[figure]{capposition=top}
+\floatsetup[table]{capposition=top}
+
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{amsmath, amssymb}
+\usepackage{fancyhdr}
+\usepackage{mathptmx} 
+\usepackage[T1]{fontenc}
+\usepackage{setspace} 
+\usepackage{ragged2e} 
+\usepackage{titlesec}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-\do\.\do\_\do\?\do\=\do\&\do\%}
+\usepackage[hidelinks,breaklinks]{hyperref}
+
+% --- Pandoc Compatibility Block (Iron Clad) ---
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{xcolor}
+\usepackage{fancyvrb}
+\usepackage{framed}
+
+% --- Code Highlighting (Pandoc Standard) ---
+\AtBeginDocument{
+  \definecolor{shadecolor}{RGB}{248,248,248}
+}
+
+% Compatibilidad Pandoc 3.x
+\ifdefined\pandocbounded\else
+  \newcommand{\pandocbounded}[1]{#1}
+\fi
+
+% --- Pandoc Citeproc (CSL) compatibility ---
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.27cm} 
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newcommand{\citeproctext}{} 
+\newcommand{\citeprocitem}[2]{\item} 
+\newenvironment{CSLReferences}[2] 
+ {\begin{list}{}{
+  \setlength{\leftmargin}{\cslhangindent}
+  \setlength{\parsep}{0pt}
+  \setlength{\itemsep}{6pt}
+  \ifodd #1
+   \setlength{\leftmargin}{\leftmargin + \csllabelwidth}
+   \setlength{\itemindent}{-\csllabelwidth}
+  \fi
+  }
+  \renewcommand{\bibitem}[2][]{\item} % Elimina los corchetes [ ]
+ }
+ {\end{list}}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\makeatletter
+\@ifundefined{paragraph}{\newcounter{paragraph}}{}
+\@ifundefined{subparagraph}{\newcounter{subparagraph}}{}
+\makeatother
+
+% Solución al error 'No counter none defined' en longtable
+\makeatletter
+\newcounter{none}
+\@ifpackageloaded{caption}{
+  \DeclareCaptionType{none}
+  \captionsetup[none]{name=Tabla}
+}{}
+\makeatother
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+% --- Macros Institucionales ---
+\newcommand{\fuente}[1]{
+  \vspace{4pt}
+  \begin{flushleft}
+    \small
+    \textit{Nota.} #1
+  \end{flushleft}
+}
+
+% --- Localización Manual Determinista (Sin Babel) ---
+\AtBeginDocument{
+  \renewcommand{\tablename}{Tabla}
+  \renewcommand{\figurename}{Figura}
+  \renewcommand{\contentsname}{Índice}
+  \renewcommand{\listtablename}{Índice de Tablas}
+  \renewcommand{\listfigurename}{Índice de Figuras}
+  \renewcommand{\abstractname}{Resumen}
+  \renewcommand{\refname}{Referencias}
+  
+  \RaggedRight
+  \setlength{\parindent}{1.27cm}
+  \setlength{\parskip}{0pt}
+}
+
+\DeclareCaptionLabelSeparator{newline}{\\ \vspace{2pt}}
+\captionsetup{
+  position=top,
+  justification=RaggedRight,
+  singlelinecheck=false,
+  labelfont=bf,
+  textfont=it,
+  labelsep=newline,
+  font=small,
+  skip=10pt
+}
+\captionsetup[figure]{name=Figura}
+\captionsetup[table]{name=Tabla}
+
+% Márgenes APA 7
+\geometry{
+  a4paper,
+  margin=25.4mm,
+  headheight=15mm
+}
+
+% --- Encabezados ---
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[L]{\includegraphics[height=1.2cm]{\logoUNL}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{\logoECONOMIA}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[L]{\includegraphics[height=1.2cm]{\logoUNL}}
+  \fancyhead[R]{\includegraphics[height=1.2cm]{\logoECONOMIA}}
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% --- Títulos ---
+\titleformat{\section}{\normalfont\normalsize\bfseries\centering}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\itshape}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
+\titlespacing*{\paragraph}{0pt}{12pt}{6pt}
+
+\newenvironment{referenciasAPA}{
+  \setlength{\parindent}{-1.27cm}
+  \setlength{\leftskip}{1.27cm}
+  \setlength{\parskip}{6pt}
+}{\par}
+
+\makeatletter\@ifpackageloaded{caption}{}{\usepackage{caption}}\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}\makeatother\makeatletter\makeatother\makeatletter\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}\makeatother
+
+\begin{document}
+
+\begin{center}
+    {\bfseries \Large UNIVERSIDAD NACIONAL DE LOJA}\\[0.3cm]
+    {\bfseries \large FACULTAD JURÍDICA, SOCIAL Y
+ADMINISTRATIVA}\\[0.2cm]
+    {\bfseries CARRERA DE ECONOMÍA}\\[1.5cm]
+    
+    {\bfseries \large POLÍTICA ECONÓMICA}\\[1cm]
+    
+    {\bfseries \Large }\\[1.5cm]
+\end{center}
+
+\begin{center}
+    \setstretch{1.1}
+                        Erick Fabricio Condoy Seraquive \\
+                \vspace{0.5cm}
+    Econ. Maria Gabriela Moreno Hurtado \\ 
+    
+\end{center}
+
+\vspace{1cm}
+
+\doublespacing
+\setlength{\parindent}{1.27cm}
+
+\section{Guía de Transcripción a Mano: Explicación de la Política
+Monetaria}\label{guuxeda-de-transcripciuxf3n-a-mano-explicaciuxf3n-de-la-poluxedtica-monetaria}
+
+\begin{quote}
+{[}!NOTE{]} Este documento contiene la síntesis académica rigurosa que
+debes copiar a mano para cumplir con la justificación obligatoria de una
+página. Se ha optimizado para que quepa físicamente en una página
+escrita, manteniendo una estructura conceptual de alta densidad sin
+redundancias ni ``slop''.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{EXPLICACIÓN ESCRITA A MANO (Copiar esta
+sección)}\label{explicaciuxf3n-escrita-a-mano-copiar-esta-secciuxf3n}
+
+\textbf{Título:} Justificación Estructural y Análisis Teórico del
+Capítulo 11: Política Monetaria
+
+La estructura del organizador gráfico se fundamenta en un
+\textbf{enfoque de transmisión causal e instrumental}. Este diseño
+jerárquico permite trazar de forma lógica la secuencia de la
+intervención pública desde el control técnico de variables operativas
+hasta la consecución de los objetivos finales de estabilización
+macroeconómica, separando las fases de implementación, transmisión y
+retroalimentación (expectativas).
+
+\textbf{1. Idea central del capítulo 11:} La idea central es que la
+política monetaria, bajo el mando de una autoridad autónoma que genera
+credibilidad y gestiona expectativas, busca estabilizar variables reales
+(producción y empleo) y nominales (control de la inflación) mediante la
+manipulación de la liquidez, el crédito y la tasa de interés en el
+sistema financiero.
+
+\textbf{2. Relación entre instrumentos, canales y objetivos:} Los
+\textbf{instrumentos} (operaciones de mercado abierto, tasa de encaje y
+redescuento) modifican las reservas bancarias primarias y el tipo de
+interés interbancario. Esta alteración se propaga a través de los
+\textbf{canales de transmisión} (tipo de interés, canal de crédito,
+canal de precios de activos y tipo de cambio) impactando en el costo del
+financiamiento y las decisiones de consumo e inversión de los agentes.
+Finalmente, esta variación en la demanda agregada determina el nivel de
+precios y empleo, alcanzando los \textbf{objetivos finales} de
+estabilidad de precios e inflación controlada.
+
+\textbf{3. Efectos distintos en el corto y largo plazo:} En el
+\textbf{corto plazo}, debido a la existencia de rigideces nominales
+(precios e información asimétrica), la política monetaria tiene efectos
+reales sobre la producción y el empleo mediante alteraciones en el tipo
+de interés real. En el \textbf{largo plazo}, bajo el supuesto de
+neutralidad monetaria y flexibilidad de precios, los incrementos de la
+oferta monetaria se trasladan de forma proporcional al nivel general de
+precios, determinando únicamente la inflación sin alterar las variables
+reales de la economía.
+
+\textbf{4. Limitaciones del instrumento en una economía dolarizada
+(Ecuador):} Ecuador carece de moneda propia y de un banco central emisor
+de última instancia. Sus \textbf{limitaciones} clave son: (a)
+incapacidad para emitir masa monetaria para inyectar liquidez directa,
+(b) imposibilidad de manipular el tipo de cambio nominal para absorber
+shocks externos (pérdida de canal externo de transmisión), y (c)
+subordinación de la oferta monetaria a la balanza de pagos (ingreso de
+divisas por exportaciones, inversión extranjera o deuda). La política
+monetaria nacional queda reducida a medidas de liquidez secundaria
+(encaje bancario y reciclaje interno del crédito), careciendo de
+autonomía monetaria real.
+
+\textbf{Conclusión (Respuesta al Cierre):} La política monetaria no
+puede analizarse uniformemente entre países debido a las diferencias en
+sus regímenes cambiarios y grados de desarrollo financiero. En regímenes
+con soberanía monetaria se analiza bajo la libre fijación de tasas de
+interés y tipo de cambio flexible, mientras que en Ecuador, al ser una
+economía dolarizada, el análisis se desplaza hacia la gestión de la
+liquidez existente, la solidez del sistema financiero y la
+vulnerabilidad ante shocks de la cuenta corriente.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Recomendaciones para tu Organizador
+Gráfico}\label{recomendaciones-para-tu-organizador-gruxe1fico}
+
+Para asegurar el \textbf{100\% de la rúbrica}, te sugiero estructurar tu
+organizador (en Canva, draw.io o PowerPoint) de la siguiente manera:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Eje Central: La Ruta Causal} (Recomendado como organizador
+  principal):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Dibuja un diagrama de flujo horizontal dividido en 4 niveles o
+    fases:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \emph{Fase 1: Instrumentos} (OMA, Encaje Legal, Facilidades de
+      Crédito).
+    \item
+      \emph{Fase 2: Variables Operativas e Intermedias} (Tasa
+      interbancaria, Liquidez del sistema).
+    \item
+      \emph{Fase 3: Canales de Transmisión} (Crédito, Tasas de interés,
+      Expectativas).
+    \item
+      \emph{Fase 4: Objetivos Finales} (Estabilidad de precios / Control
+      de Inflación).
+    \end{itemize}
+  \end{itemize}
+\item
+  \textbf{Sección Lateral Izquierda (Fundamentos y Estrategias):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Definición:} Acción sobre liquidez, crédito y tasas para
+    influir en producción y precios.
+  \item
+    \emph{Autonomía del Banco Central:} Clave para la credibilidad de
+    las reglas monetarias y evitar inconsistencia dinámica por presiones
+    de financiamiento al gasto público.
+  \item
+    \emph{Estrategias:} Agregados monetarios frente a Metas de Inflación
+    (\emph{Inflation Targeting}).
+  \end{itemize}
+\item
+  \textbf{Sección Lateral Derecha (Efectividad y Límites):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Efectividad:} Sensibilidad de la demanda de dinero (\(L(i)\))
+    y de la inversión (\(I(r)\)).
+  \item
+    \emph{Limitaciones:} Retardos (interno y externo), asimetría (es más
+    fácil frenar que reactivar), e inestabilidad de la velocidad del
+    dinero.
+  \end{itemize}
+\item
+  \textbf{Recuadro Especial (Ecuador - Dolarización):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Título:} \textbf{¿Qué cambia en una economía dolarizada como
+    Ecuador?}
+  \item
+    \emph{Puntos clave:}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      No hay emisor de última instancia ni devaluación cambiaria.
+    \item
+      El Banco Central del Ecuador (BCE) no controla el tipo de interés
+      internacional, sino que actúa como regulador de la liquidez
+      doméstica (encaje mínimo y distribución de reservas).
+    \item
+      Dependencia del flujo neto de dólares externos.
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\end{document}

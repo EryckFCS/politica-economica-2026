@@ -1,0 +1,9 @@
+assignment: "Organizador Gráfico de la Política Monetaria"
+submission_date: "11 de julio de 2026"
+format:
+  pdf:
+    header-includes: |
+      \usepackage{fontspec}
+      \newcommand{\logoUNL}{/home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/assets/logos/logo_unl.png}
+      \newcommand{\logoECONOMIA}{/home/erick-fcs/Capital_Workstation/capital-workstation-libs/src/ecs_quantitative/reporting/assets/logos/logo_economia.jpg}
+      \renewcommand{\RaggedRight}{\justifying}

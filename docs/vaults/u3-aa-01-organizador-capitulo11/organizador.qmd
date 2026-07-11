@@ -1,0 +1,163 @@
+---
+title: "Organizador Gráfico: Política Monetaria"
+subtitle: "Capítulo 11 - Política Económica"
+author: "Erick FCS"
+date: "2026-07-11"
+assignment: "Organizador Gráfico de la Política Monetaria"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    self-contained: true
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+Este documento presenta el organizador gráfico detallado del **Capítulo 11: Política Monetaria** estructurado como una **Ruta Causal e Integración Conceptual** que conecta los instrumentos, canales de transmisión, limitaciones y objetivos de la política monetaria.
+
+---
+
+## 1. Diagrama de la Ruta Causal (Mermaid)
+
+El siguiente diagrama de flujo ilustra el canal de transmisión de las decisiones monetarias desde los instrumentos iniciales hasta los objetivos finales del Banco Central.
+
+```{mermaid}
+flowchart TD
+    %% Estilos de Nodos Súper Premium en Hexadecimal
+    classDef inst fill:#1F6FAD,stroke:#13446A,stroke-width:2px,color:#fff;
+    classDef varOp fill:#D85A21,stroke:#903C16,stroke-width:2px,color:#fff;
+    classDef canal fill:#237C42,stroke:#144625,stroke-width:2px,color:#fff;
+    classDef obj fill:#B2182B,stroke:#6F0F1B,stroke-width:2px,color:#fff;
+    classDef limit fill:#762A83,stroke:#4A1A52,stroke-width:2px,color:#fff;
+    classDef auth fill:#1B6E6B,stroke:#0E3A39,stroke-width:2.5px,color:#fff;
+
+    %% Autoridad
+    BC{"BANCO CENTRAL<br>Autoridad Monetaria Autónoma"}:::auth
+
+    %% Bloque de Instrumentos
+    subgraph F1 ["Fase I: Instrumentos de Intervención"]
+        A("Operaciones de Mercado Abierto<br>Venta y Compra de Títulos OMA"):::inst
+        B("Tasa de Encaje Legal<br>Coeficiente de Caja"):::inst
+        C("Tasa de Redescuento<br>Facilidades de Crédito"):::inst
+    end
+
+    %% Variables Operativas (Banca)
+    subgraph F2 ["Fase II: Sistema Financiero e Interbancario"]
+        D[("Reservas Bancarias Primarias<br>Fondos de encaje y liquidez")]:::varOp
+        E("Tasa de Interés Interbancaria<br>Costo del dinero interbancario"):::varOp
+    end
+
+    %% Canales de Transmisión Desagregados
+    subgraph F3 ["Fase III: Canales de Transmisión Macro"]
+        F("Canal de Tasas de Interés<br>Costo del crédito al consumo e inversión"):::canal
+        G("Canal del Crédito<br>Disponibilidad y oferta de préstamos"):::canal
+        H("Canal de Precios de Activos<br>Efecto riqueza en acciones o vivienda"):::canal
+        I("Canal del Tipo de Cambio<br>Competitividad y comercio neto"):::canal
+        J("Canal de Expectativas<br>Credibilidad e inflación esperada"):::canal
+    end
+
+    %% Variables Macroeconómicas Intermedias
+    subgraph F4 ["Fase IV: Economía Real e Impacto Agregado"]
+        K("Consumo Privado y Inversión Empresarial"):::canal
+        L("Demanda Agregada"):::canal
+    end
+
+    %% Objetivos Finales
+    subgraph F5 ["Fase V: Objetivos Finales de Política Económica"]
+        M{"Estabilidad de Precios<br>Control de la Inflación"}:::obj
+        N{"Crecimiento Sostenido<br>Producción y Empleo"}:::obj
+    end
+
+    %% Conexiones de Control
+    BC --> |Ejecuta| A
+    BC --> |Establece| B
+    BC --> |Modifica| C
+
+    A --> D
+    A --> E
+    B --> D
+    C --> D
+    D --> E
+    
+    E --> F
+    E --> G
+    E --> H
+    E --> I
+    E --> J
+
+    F --> K
+    G --> K
+    H --> K
+    I --> L
+    J --> K
+
+    K --> L
+    L --> M
+    L --> N
+    
+    %% Limitaciones afectando la efectividad
+    O["Limitaciones y Retardos<br>Fricciones internas y externas"]:::limit -.-> F
+    O -.-> K
+```
+
+---
+
+## 2. Componentes Conceptuales del Organizador
+
+### 2.1. Concepto y Rol de la Política Monetaria
+*   **Definición:** Regulación de la cantidad de dinero, el crédito y las tasas de interés domésticas administrada por la autoridad monetaria (Banco Central).
+*   **Influencia:** Afecta directamente las reservas del sistema bancario interbancario e indirectamente las expectativas y la producción agregada.
+
+### 2.2. Objetivos Principales
+*   **Estabilidad de Precios:** Preservar el valor nominal de la moneda mediante la contención de shocks de precios.
+*   **Estabilidad de Crecimiento y Empleo:** Mitigar las fluctuaciones recesivas del PIB estimulando la demanda interna.
+*   **Estabilidad Cambiaria:** Regular la liquidez en divisas internacionales para sostener la solvencia de pagos con el exterior.
+
+### 2.3. Autonomía de la Autoridad Monetaria
+*   **Propósito:** Proteger la gestión técnica del dinero de presiones fiscales electorales oportunistas.
+*   **Evidencia:** Reduce la inconsistencia temporal e impide el financiamiento directo de déficits presupuestarios con emisión de dinero inorgánico.
+
+### 2.4. Estrategias Operativas
+*   *Agregados Monetarios:* Control rígido de la oferta monetaria bajo el supuesto de velocidad de circulación estable del dinero.
+*   *Metas de Inflación:* Ajuste preventivo del tipo de interés interbancario de referencia para guiar las expectativas de precios de mediano plazo.
+
+### 2.5. Instrumentos Causales y Efectos Esperados
+
+| Instrumento | Medida | Efecto Intermedio | Efecto en Economía Real |
+| :--- | :--- | :--- | :--- |
+| **OMA (Venta)** | Venta de títulos a la banca | $\downarrow$ Reservas líquidas de bancos | $\uparrow$ Tasas de interés de mercado $\rightarrow$ $\downarrow$ Consumo e Inversión $\rightarrow$ $\downarrow$ Demanda Agregada. |
+| **Encaje Bancario** | $\uparrow$ Coeficiente legal | $\downarrow$ Capacidad crediticia del sistema | $\uparrow$ Costo de financiamiento $\rightarrow$ $\downarrow$ Gasto privado agregado $\rightarrow$ $\downarrow$ Inflación. |
+| **Redescuento** | $\uparrow$ Tasa de redescuento | $\downarrow$ Incentivo a solicitar liquidez | Actitud restrictiva bancaria $\rightarrow$ Menor canalización de préstamos. |
+
+### 2.6. Limitaciones Estructurales
+*   *Asimetría de impacto:* Elevada efectividad en fases de sobrecalentamiento (política contractiva) y nula efectividad en recesiones profundas (política expansiva) si hay desconfianza y aversión al crédito.
+*   *Retardos de implementación:* Los efectos finales sobre las variables reales demoran entre 6 y 18 meses tras la toma de decisión.
+
+---
+
+## 3. Recuadro Especial: El Caso de Ecuador (Dolarización y Gobierno de Daniel Noboa)
+
+La dolarización oficial adoptada en el año 2000 eliminó la soberanía monetaria del país. Durante el gobierno de **Daniel Noboa (2024-2026)**, el funcionamiento monetario se ha caracterizado por las siguientes dinámicas empíricas de gran impacto:
+
+### 3.1. Protección de las Reservas y Acuerdo con el FMI (2024)
+La debilidad de la caja fiscal presionó el balance del Banco Central del Ecuador (BCE) por el uso de depósitos del sector público. En mayo de 2024, la administración de Daniel Noboa concretó un acuerdo de Servicio Ampliado del Fondo (SAF) con el FMI por 4000 millones de dólares. El ingreso de estos recursos externos blindó la liquidez de las reservas internacionales del BCE, evitando una descapitalización que pusiera en riesgo el esquema de dolarización.
+
+### 3.2. Regulación de Techos de Tasas de Interés y Contracción del Crédito
+Ante la contracción del crédito de la banca privada provocada por el incremento del riesgo país en 2024, el BCE reformó la metodología para fijar los techos máximos de las tasas de interés de los microcréditos y segmentos productivos. El objetivo fue reabrir el canal de crédito, flexibilizando las tasas para que la banca pudiera cubrir los costos de intermediación en entornos de alta incertidumbre.
+
+### 3.3. Control del Coeficiente de Liquidez Doméstica (LDR)
+Para contrarrestar la fuga de capitales y la contracción de la liquidez física en el país, el BCE mantuvo regulados los porcentajes mínimos de liquidez que la banca privada debe conservar dentro del territorio nacional (liquidez doméstica). Esta medida mitigó la salida de divisas hacia bancos del exterior, obligando al sistema financiero a recircular el crédito de manera interna bajo el ciclo económico de Noboa.
+
+---
+
+## 4. Explicación Breve Escrita a Mano (Síntesis de una Página)
+
+Respuestas conceptuales ultra-sintetizadas para transcripción a mano en una página:
+
+*   **1. Idea central del Capítulo 11:** La política monetaria es un instrumento macroeconómico indirecto que gestiona la liquidez y las tasas de interés mediante el sistema financiero para estabilizar precios y empleo. Su efectividad depende de la credibilidad y autonomía del Banco Central para coordinar las expectativas de los agentes y evitar retardos internos o externos en su transmisión.
+*   **2. Relación entre instrumentos, canales y objetivos:** El Banco Central activa instrumentos (OMA, encaje legal o redescuento) que alteran las reservas bancarias primarias y el tipo de interés interbancaria. Este shock se propaga por canales de transmisión (crédito, tasas, activos y expectativas), modificando el costo de financiamiento y ajustando la demanda agregada para alcanzar los objetivos finales de baja inflación y crecimiento.
+*   **3. Efectos distintos en el corto y largo plazo:** En el corto plazo, debido a la rigidez temporal de precios y salarios, la masa monetaria influye sobre variables reales como la demanda, la producción y el empleo (no neutralidad). En el largo plazo, los precios se ajustan completamente, disipando el impacto real y generando solo un aumento proporcional del nivel de precios (neutralidad del dinero), haciendo que la inflación sea un fenómeno puramente monetario.
+*   **4. Limitaciones en economía dolarizada (Ecuador):** Al perder la soberanía cambiaria y la emisión primaria de dinero, el país carece de prestamista de última instancia incondicional y tipo de cambio nominal para absorber shocks externos. La política monetaria nacional queda limitada al control micro-prudencial de la liquidez doméstica (encaje y coeficientes de liquidez) y a la regulación de techos de tasas de interés.
+*   **5. Síntesis Final (¿Por qué no es uniforme el análisis?):** La política monetaria no puede analizarse igual en todos los países porque su efectividad depende del régimen cambiario y del grado de soberanía monetaria. Las economías dolarizadas como Ecuador no pueden emitir moneda propia ni anclar tasas de referencia activas, limitando al Banco Central a custodiar la liquidez doméstica frente a las fluctuaciones exógenas de la balanza de pagos.
